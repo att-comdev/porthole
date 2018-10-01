@@ -1,0 +1,27 @@
+#!/bin/bash
+{{/*
+Copyright 2017 The Openstack-Helm Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/}}
+set -ex
+input="/opt/client-keyring"
+while IFS= read -r var
+do
+  echo -e "[client.admin]\nkey = $var"| tee /etc/ceph/ceph.client.admin.keyring > /dev/null
+done < "$input"
+chmod 600 /etc/ceph/ceph.client.admin.keyring
+sed -i 's/$PrivDropToUser syslog/$PrivDropToUser nobody/' /etc/rsyslog.conf
+/etc/init.d/rsyslog restart
+ceph auth get-or-create client.viewer mon 'allow r' osd 'allow r' mds 'allow r' mgr 'allow r' -o /etc/ceph/ceph.client.viewer.keyring
+chmod 600 /etc/ceph/ceph.client.viewer.keyring
