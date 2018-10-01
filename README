@@ -1,0 +1,29 @@
+Utility Container
+-----------------
+1. Ceph utility Container
+
+Installation
+------------
+complete the installation of openstack-helm with ceph using the following documentation.
+
+https://docs.openstack.org/openstack-helm/latest/install/index.html
+
+once the installation is completed clone porthole repo to the same folder where in openstack-helm-infra is cloned.
+
+Run install_utility.sh
+
+Usage
+-----
+
+Get in to the utility pod using kubectl exec. To perform any operation on the ceph cluster use the below example.
+
+example:
+   nccli ceph osd tree
+   nccli rbd ls
+   nccli rados lspools
+
+
+TODO
+----
+1. Add ceph viewer key to the container.
+2. Customize oslo filters to restrict commands.
