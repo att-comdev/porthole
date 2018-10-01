@@ -1,0 +1,87 @@
+{{/*
+Copyright 2017 The Openstack-Helm Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/}}
+
+{{- if and .Values.manifests.deployment_utility ( and .Values.deployment.ceph .Values.conf.features.utility) }}
+{{- $envAll := . }}
+
+{{- $serviceAccountName := "ceph-utility"}}
+{{ tuple $envAll "utility" $serviceAccountName | include "helm-toolkit.snippets.kubernetes_pod_rbac_serviceaccount" }}
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: ceph-utility
+  labels:
+{{ tuple $envAll "ceph" "utility" | include "helm-toolkit.snippets.kubernetes_metadata_labels" | indent 4 }}
+spec:
+  replicas: {{ .Values.pod.replicas.utility }}
+  selector:
+    matchLabels:
+{{ tuple $envAll "ceph" "utility" | include "helm-toolkit.snippets.kubernetes_metadata_labels" | indent 6 }}
+  template:
+    metadata:
+      name: ceph-utility
+      labels:
+{{ tuple $envAll "ceph" "utility" | include "helm-toolkit.snippets.kubernetes_metadata_labels" | indent 8 }}
+    spec:
+      serviceAccountName: {{ $serviceAccountName }}
+      affinity:
+{{ tuple $envAll "ceph" "utility" | include "helm-toolkit.snippets.kubernetes_pod_anti_affinity" | indent 8 }}
+      nodeSelector:
+        {{ .Values.labels.ceph-utility.node_selector_key }}: {{ .Values.labels.ceph-utility.node_selector_value }}
+      containers:
+        - name: ceph-utility
+{{ tuple $envAll "ceph_utility" | include "helm-toolkit.snippets.image" | indent 10 }}
+{{ tuple $envAll $envAll.Values.pod.resources.ceph_utility | include "helm-toolkit.snippets.kubernetes_resources" | indent 10 }}
+          command:
+            - /tmp/init_services
+          volumeMounts:
+            - name: ceph-utility-bin
+              mountPath: /tmp/init_services
+              subPath: init_services
+              readOnly: true
+            - name: ceph-utility-sudoers
+              mountPath: /etc/sudoers.d/ceph-rootwrap-sudo
+              subPath: ceph-rootwrap-sudo
+              readOnly: true
+            - name: ceph-utility-sudoers
+              mountPath: /etc/sudoers.d/ncceph-sudo
+              subPath: ncceph-sudo
+              readOnly: true
+            - name: ceph-client-etc
+              mountPath: /etc/ceph/ceph.conf
+              subPath: ceph.conf
+              readOnly: true
+            - name: ceph-client-admin-keyring
+              mountPath: /etc/ceph/ceph.client.admin.keyring
+              subPath: ceph.client.admin.keyring
+              readOnly: true
+      volumes:
+        - name: ceph-client-etc
+          configMap:
+            name: ceph-client-etc
+            defaultMode: 0444
+        - name: ceph-client-bin
+          configMap:
+            name: ceph-client-bin
+            defaultMode: 0555
+        - name: ceph-client-admin-keyring
+          secret:
+            secretName: {{ .Values.secrets.keyrings.admin }}
+        - name: ceph-bootstrap-mds-keyring
+          secret:
+            secretName: {{ .Values.secrets.keyrings.mds }}
+{{- end }}
