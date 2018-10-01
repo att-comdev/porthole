@@ -1,0 +1,115 @@
+{{/*
+Copyright 2017 The Openstack-Helm Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/}}
+
+{{- if and .Values.manifests.deployment_utility ( and .Values.deployment.ceph .Values.conf.features.utility) }}
+{{- $envAll := . }}
+
+{{- $serviceAccountName := printf "%s" $envAll.Release.Name }}
+{{ tuple $envAll "utility" $serviceAccountName | include "helm-toolkit.snippets.kubernetes_pod_rbac_serviceaccount" }}
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: {{ printf "%s" $envAll.Release.Name }}
+  labels:
+{{ tuple $envAll "ceph" "utility" | include "helm-toolkit.snippets.kubernetes_metadata_labels" | indent 4 }}
+spec:
+  replicas: {{ .Values.pod.replicas.utility }}
+  selector:
+    matchLabels:
+{{ tuple $envAll "ceph" "utility" | include "helm-toolkit.snippets.kubernetes_metadata_labels" | indent 6 }}
+  template:
+    metadata:
+      name: {{ printf "%s" $envAll.Release.Name }}
+      labels:
+{{ tuple $envAll "ceph" "utility" | include "helm-toolkit.snippets.kubernetes_metadata_labels" | indent 8 }}
+    spec:
+      securityContext:
+        runAsUser: 65534
+      serviceAccountName: {{ $serviceAccountName }}
+      affinity:
+{{ tuple $envAll "ceph" "utility" | include "helm-toolkit.snippets.kubernetes_pod_anti_affinity" | indent 8 }}
+      nodeSelector:
+        {{ .Values.labels.utility.node_selector_key }}: {{ .Values.labels.utility.node_selector_value }}
+      containers:
+        - name: ceph-utility
+{{ tuple $envAll "ceph_utility" | include "helm-toolkit.snippets.image" | indent 10 }}
+{{ tuple $envAll $envAll.Values.pod.resources.ceph_utility | include "helm-toolkit.snippets.kubernetes_resources" | indent 10 }}
+          command:
+            - /tmp/bootstrap.sh
+          volumeMounts:
+            - name: ceph-utility-bin
+              mountPath: /tmp/bootstrap.sh
+              subPath: bootstrap.sh
+              readOnly: true
+            - name: ceph-utility-bin
+              mountPath: /tmp/managekey.sh
+              subPath: managekey.sh
+              readOnly: true
+            - name: ceph-utility-bin
+              mountPath: /usr/local/bin/nccli
+              subPath: nccli
+              readOnly: true
+            - name: ceph-utility-bin
+              mountPath: /usr/local/bin/ceph-utility-rootwrap
+              subPath: ceph-utility-rootwrap
+              readOnly: true
+            - name: ceph-utility-sudoers
+              mountPath: /etc/sudoers.d/ceph-rootwrap-sudo
+              subPath: ceph-rootwrap-sudo
+              readOnly: true
+            - name: ceph-utility-sudoers
+              mountPath: /etc/sudoers.d/nccli-sudo
+              subPath: nccli-sudo
+              readOnly: true
+            - name: ceph-etc
+              mountPath: /etc/ceph/ceph.conf
+              subPath: ceph.conf
+              readOnly: true
+            - name: ceph-client-admin-keyring
+              mountPath: /opt/client-keyring
+              subPath: key
+            - name: ceph-utility-etc
+              mountPath: /etc/ceph/rootwrap.d/ceph.filter
+              subPath: ceph.filter
+              readOnly: true
+            - name: ceph-utility-etc
+              mountPath: /etc/ceph/rootwrap.conf
+              subPath: rootwrap.conf
+              readOnly: true
+
+      volumes:
+        - name: ceph-utility-sudoers
+          configMap:
+            name: {{ printf "%s-%s" $envAll.Release.Name "sudoers" }}
+            defaultMode: 0644
+        - name: ceph-utility-bin
+          configMap:
+            name: {{ printf "%s-%s" $envAll.Release.Name "bin" }}
+            defaultMode: 0555
+        - name: ceph-utility-etc
+          configMap:
+            name: {{ printf "%s-%s" $envAll.Release.Name "etc" }}
+            defaultMode: 0555
+        - name: ceph-etc
+          configMap:
+            name: {{ .Values.conf.cephconf.etc }}
+            defaultMode: 0600
+        - name: ceph-client-admin-keyring
+          secret:
+            secretName: {{ .Values.secrets.keyrings.admin | quote }}
+            defaultMode: 0600
+{{- end }}
