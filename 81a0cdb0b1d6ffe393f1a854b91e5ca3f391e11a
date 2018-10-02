@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d7396eeb_76d0eea9",
+        "filename": "ceph-utility/values.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1011946
+      },
+      "writtenOn": "2018-10-02T16:10:55Z",
+      "side": 1,
+      "message": "I did not see the Dockerfile for this as part of this patchset.",
+      "revId": "81a0cdb0b1d6ffe393f1a854b91e5ca3f391e11a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "1d241538_3b509047",
+        "filename": "ceph-utility/values.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 104,
+      "author": {
+        "id": 1011946
+      },
+      "writtenOn": "2018-10-02T16:10:55Z",
+      "side": 1,
+      "message": "FIlters -\u003e filters?",
+      "revId": "81a0cdb0b1d6ffe393f1a854b91e5ca3f391e11a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b436f1e9_e0e9a4c5",
+        "filename": "ceph-utility/values.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1011946
+      },
+      "writtenOn": "2018-10-02T16:10:55Z",
+      "side": 1,
+      "message": "This provides full access to both rbd and ceph commands.  It would be ideal to provide an example, even if commented out, to show how you would restrict some ceph commands.  For instance, suppose you did not want them to be able to delete any OSDs as a hypothetical example.  This is where rootwrap regular expressions are helpful.",
+      "revId": "81a0cdb0b1d6ffe393f1a854b91e5ca3f391e11a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
