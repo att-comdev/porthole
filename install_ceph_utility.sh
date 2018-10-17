@@ -37,16 +37,16 @@ helm upgrade --install ceph-utility-config ${OSH_INFRA_PATH}/ceph-provisioners \
   --values=/tmp/ceph-utility-config.yaml \
   ${OSH_EXTRA_HELM_ARGS} \
   ${OSH_EXTRA_HELM_ARGS_CEPH_NS_ACTIVATE}
-
+cd porthole
 #NOTE: Wait for deploy
-./${OSH_INFRA_PATH}/tools/deployment/common/wait-for-pods.sh utility
+../${OSH_INFRA_PATH}/tools/deployment/common/wait-for-pods.sh utility
 
 make ceph-utility
 helm upgrade --install ceph-utility ceph-utility \
   --namespace=utility
 
 #NOTE: Wait for deploy
-./${OSH_INFRA_PATH}/tools/deployment/common/wait-for-pods.sh utility
+../${OSH_INFRA_PATH}/tools/deployment/common/wait-for-pods.sh utility
 
 #NOTE: Validate Deployment info
 kubectl get -n utility jobs --show-all
