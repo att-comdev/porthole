@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "236cadcb_f73be345",
+        "filename": "Dockerfiles/ceph-utility/Dockerfile",
+        "patchSetId": 9
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1010324
+      },
+      "writtenOn": "2018-10-23T20:33:31Z",
+      "side": 1,
+      "message": "why? this is done in line 6.",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 18
+      },
+      "revId": "4b3689b834432bebfec528ca8055e67f5ac76d1f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "336f5c12_04c33bdd",
+        "filename": "Dockerfiles/ceph-utility/Dockerfile",
+        "patchSetId": 9
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1010324
+      },
+      "writtenOn": "2018-10-23T20:33:31Z",
+      "side": 1,
+      "message": "why? surely only bash, rootwrap required here, why do we install both the python3 and python2 versions of rootwrap?\n\nAlso all the modification to apt repos comes *after* the packages are deployed - so have no effect.",
+      "range": {
+        "startLine": 5,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 103
+      },
+      "revId": "4b3689b834432bebfec528ca8055e67f5ac76d1f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f9c8f1d9_b8d1948f",
+        "filename": "Dockerfiles/ceph-utility/Dockerfile",
+        "patchSetId": 9
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1010324
+      },
+      "writtenOn": "2018-10-23T20:33:31Z",
+      "side": 1,
+      "message": "theres no point doing this in a seperate step, by this point things have been committed to a layer - please do this as part of the updated command above.",
+      "range": {
+        "startLine": 30,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 48
+      },
+      "revId": "4b3689b834432bebfec528ca8055e67f5ac76d1f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "49f6a90e_6a4339a8",
+        "filename": "Dockerfiles/ceph-utility/Dockerfile",
+        "patchSetId": 9
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1010324
+      },
+      "writtenOn": "2018-10-23T20:33:31Z",
+      "side": 1,
+      "message": "why?",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 33,
+        "endChar": 67
+      },
+      "revId": "4b3689b834432bebfec528ca8055e67f5ac76d1f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
