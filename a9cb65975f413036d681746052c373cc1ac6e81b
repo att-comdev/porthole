@@ -22,6 +22,30 @@
       "revId": "a9cb65975f413036d681746052c373cc1ac6e81b",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b1485c65_31393f9c",
+        "filename": "Dockerfiles/ceph-utility/Dockerfile",
+        "patchSetId": 11
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2018-10-26T17:00:09Z",
+      "side": 1,
+      "message": "WS removed on latest PS",
+      "parentUuid": "67d630e5_7db8d232",
+      "range": {
+        "startLine": 26,
+        "startChar": 74,
+        "endLine": 26,
+        "endChar": 75
+      },
+      "revId": "a9cb65975f413036d681746052c373cc1ac6e81b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
