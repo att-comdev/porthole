@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "06554a30_c8ea185c",
+        "filename": "README",
+        "patchSetId": 22
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1015454
+      },
+      "writtenOn": "2018-11-28T17:45:43Z",
+      "side": 1,
+      "message": "May be good to include the specific URL like for the openstack-helm reference above.",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 11,
+        "endChar": 114
+      },
+      "revId": "baeb8af7bf601712f07be4d456a10d76034d30a5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
