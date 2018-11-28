@@ -22,6 +22,29 @@
       "revId": "baeb8af7bf601712f07be4d456a10d76034d30a5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "935a6286_0417e10f",
+        "filename": "ceph-utility/values.yaml",
+        "patchSetId": 22
+      },
+      "lineNbr": 92,
+      "author": {
+        "id": 1015454
+      },
+      "writtenOn": "2018-11-28T17:49:10Z",
+      "side": 1,
+      "message": "No need for these parameters on a ceph client side.",
+      "range": {
+        "startLine": 92,
+        "startChar": 0,
+        "endLine": 92,
+        "endChar": 24
+      },
+      "revId": "baeb8af7bf601712f07be4d456a10d76034d30a5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
