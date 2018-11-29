@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d8942362_3e1c54ca",
+        "filename": "ceph-utility/templates/bin/etc/_ceph-rootwrap-filter.tpl",
+        "patchSetId": 23
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1015440
+      },
+      "writtenOn": "2018-11-29T17:33:09Z",
+      "side": 1,
+      "message": "We should also be including radosgw-admin here, and likely crushtool.",
+      "revId": "714d6257d8ca4b53ee9f2ba0ed73ca8db945d9f3",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
