@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "6dda04cc_483ec3df",
+        "filename": "ceph-utility/templates/deployment-utility.yaml",
+        "patchSetId": 24
+      },
+      "lineNbr": 26,
+      "author": {
+        "id": 1015558
+      },
+      "writtenOn": "2018-12-05T16:15:15Z",
+      "side": 1,
+      "message": "shall we read it from release name ( $envAll.Release.Name) ?",
+      "range": {
+        "startLine": 26,
+        "startChar": 13,
+        "endLine": 26,
+        "endChar": 20
+      },
+      "revId": "1272b437eaf2603bb8aab14b4dbe705241dfd4b8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e8b1a1d4_c99db1ce",
+        "filename": "ceph-utility/templates/deployment-utility.yaml",
+        "patchSetId": 24
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1015558
+      },
+      "writtenOn": "2018-12-05T16:15:15Z",
+      "side": 1,
+      "message": "ditto like above",
+      "range": {
+        "startLine": 36,
+        "startChar": 17,
+        "endLine": 36,
+        "endChar": 24
+      },
+      "revId": "1272b437eaf2603bb8aab14b4dbe705241dfd4b8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a3a70be1_f8d3c8fb",
+        "filename": "ceph-utility/templates/deployment-utility.yaml",
+        "patchSetId": 24
+      },
+      "lineNbr": 109,
+      "author": {
+        "id": 1015558
+      },
+      "writtenOn": "2018-12-05T16:15:15Z",
+      "side": 1,
+      "message": "this could change if we have two ceph cluster so shall we ready from values?",
+      "range": {
+        "startLine": 109,
+        "startChar": 18,
+        "endLine": 109,
+        "endChar": 22
+      },
+      "revId": "1272b437eaf2603bb8aab14b4dbe705241dfd4b8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
