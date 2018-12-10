@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c21f90a1_5be6b0ee",
+        "filename": "ceph-utility/templates/bin/etc/_ceph-rootwrap-filter.tpl",
+        "patchSetId": 30
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1010324
+      },
+      "writtenOn": "2018-12-10T17:39:03Z",
+      "side": 1,
+      "message": "this (and all configuration files) should be driven by the values.yaml file - It would also be good to see some examples of rootwrap being used to prevent some commands being run via regex (eg destructive ones.)",
+      "revId": "0bd26c53645e476d0206b9130b7f6c335b969878",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
