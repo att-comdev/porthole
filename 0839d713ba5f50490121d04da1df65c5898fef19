@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "c08eb288_2e946a70",
+        "filename": "README",
+        "patchSetId": 38
+      },
+      "lineNbr": 73,
+      "author": {
+        "id": 1012474
+      },
+      "writtenOn": "2018-12-27T17:42:40Z",
+      "side": 1,
+      "message": "This should be removed. I understand it\u0027s a reference for kicking the tires here before this change set gets merged, but this reference also requires cd\u0027ing to the porthole project directory before it can be executed so it\u0027s out of step. Let\u0027s go ahead and just remove it.",
+      "range": {
+        "startLine": 72,
+        "startChar": 0,
+        "endLine": 73,
+        "endChar": 82
+      },
+      "revId": "0839d713ba5f50490121d04da1df65c5898fef19",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
