@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "67089b5e_9690684c",
+        "filename": "Dockerfiles/ceph-utility/Dockerfile",
+        "patchSetId": 41
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 1015440
+      },
+      "writtenOn": "2019-01-07T16:11:03Z",
+      "side": 1,
+      "message": "This need to be using \u0027mimic\u0027 now instead of \u0027luminous\u0027.",
+      "revId": "8895700512dec80cc9e9b5885c9efb3968eee844",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0db17a41_7d2e276d",
+        "filename": "Dockerfiles/ceph-utility/Dockerfile",
+        "patchSetId": 41
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1015440
+      },
+      "writtenOn": "2019-01-07T16:11:03Z",
+      "side": 1,
+      "message": "L18 isn\u0027t needed either, as these python packages will be pulled in with the latest Mimic updates. However can we change this to the following instead? python-openstackclient and python-swiftclient",
+      "revId": "8895700512dec80cc9e9b5885c9efb3968eee844",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
