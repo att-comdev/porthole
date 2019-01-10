@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "c68f17e9_22fd9f15",
+        "filename": "Dockerfiles/ceph-utility/Dockerfile.ubuntu",
+        "patchSetId": 44
+      },
+      "lineNbr": 6,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-01-10T16:16:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b4711cad_60976a2a",
+      "range": {
+        "startLine": 6,
+        "startChar": 17,
+        "endLine": 6,
+        "endChar": 25
+      },
+      "revId": "50ade2b5b69cda0dc9adc89996cd485d6572674f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6027bad3_7e2dd67b",
         "filename": "Dockerfiles/ceph-utility/Dockerfile.ubuntu",
         "patchSetId": 44
@@ -36,6 +60,30 @@
       "writtenOn": "2019-01-10T15:21:15Z",
       "side": 1,
       "message": "Are we using rgwadmin currently?  I\u0027ve noticed issues with rgwadmin and the Ceph Mimic release. The latest release they seem to have tested against is Jewel. See: https://github.com/UMIACS/rgwadmin",
+      "range": {
+        "startLine": 24,
+        "startChar": 44,
+        "endLine": 24,
+        "endChar": 52
+      },
+      "revId": "50ade2b5b69cda0dc9adc89996cd485d6572674f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4dcb607c_6fd974cf",
+        "filename": "Dockerfiles/ceph-utility/Dockerfile.ubuntu",
+        "patchSetId": 44
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-01-10T16:16:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6027bad3_7e2dd67b",
       "range": {
         "startLine": 24,
         "startChar": 44,
@@ -71,6 +119,30 @@
     },
     {
       "key": {
+        "uuid": "8c5883cc_61757efa",
+        "filename": "Dockerfiles/ceph-utility/Makefile",
+        "patchSetId": 44
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-01-10T16:16:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "a5f94bc3_0457966b",
+      "range": {
+        "startLine": 25,
+        "startChar": 30,
+        "endLine": 25,
+        "endChar": 39
+      },
+      "revId": "50ade2b5b69cda0dc9adc89996cd485d6572674f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "eefa9006_dd397b4f",
         "filename": "Dockerfiles/ceph-utility/Makefile",
         "patchSetId": 44
@@ -82,6 +154,30 @@
       "writtenOn": "2019-01-10T15:21:15Z",
       "side": 1,
       "message": "This should be attcomdev",
+      "range": {
+        "startLine": 27,
+        "startChar": 30,
+        "endLine": 27,
+        "endChar": 48
+      },
+      "revId": "50ade2b5b69cda0dc9adc89996cd485d6572674f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "dfae5d89_bd4fdd57",
+        "filename": "Dockerfiles/ceph-utility/Makefile",
+        "patchSetId": 44
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-01-10T16:16:46Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "eefa9006_dd397b4f",
       "range": {
         "startLine": 27,
         "startChar": 30,
