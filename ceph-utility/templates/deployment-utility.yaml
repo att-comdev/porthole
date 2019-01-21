@@ -67,6 +67,10 @@ spec:
               mountPath: /usr/local/bin/ceph-utility-rootwrap
               subPath: ceph-utility-rootwrap
               readOnly: true
+            - name: ceph-utility-bin
+              mountPath: /tmp/osd-maintenance
+              subPath: osd-maintenance
+              readOnly: true
             - name: ceph-utility-sudoers
               mountPath: /etc/sudoers.d/nccli-sudo
               subPath: nccli-sudo
