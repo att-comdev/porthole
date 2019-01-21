@@ -50,6 +50,9 @@ spec:
 {{ tuple $envAll $envAll.Values.pod.resources.ceph_utility | include "helm-toolkit.snippets.kubernetes_resources" | indent 10 }}
           command:
             - /tmp/bootstrap.sh
+          env:
+            - name: CLUSTER
+              value: "ceph"
           volumeMounts:
             - name: ceph-utility-bin
               mountPath: /tmp/bootstrap.sh
@@ -66,6 +69,10 @@ spec:
             - name: ceph-utility-bin
               mountPath: /usr/local/bin/ceph-utility-rootwrap
               subPath: ceph-utility-rootwrap
+              readOnly: true
+            - name: ceph-utility-bin
+              mountPath: /tmp/osd-maintenance.sh
+              subPath: osd-maintenance.sh
               readOnly: true
             - name: ceph-utility-sudoers
               mountPath: /etc/sudoers.d/nccli-sudo
