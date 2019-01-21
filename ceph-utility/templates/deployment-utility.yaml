@@ -20,6 +20,43 @@ limitations under the License.
 {{- $serviceAccountName := printf "%s" $envAll.Release.Name }}
 {{ tuple $envAll "utility" $serviceAccountName | include "helm-toolkit.snippets.kubernetes_pod_rbac_serviceaccount" }}
 ---
+kind: ClusterRoleBinding
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: {{ $serviceAccountName }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: {{ $serviceAccountName }}
+subjects:
+- kind: ServiceAccount
+  name: {{ $serviceAccountName }}
+  namespace: {{ .Release.Namespace }}
+---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: {{ $serviceAccountName }}
+rules:
+  - apiGroups:
+    - ""
+    - extensions
+    resources:
+      - pods
+      - namespaces
+      - nodes
+      - serviceaccounts
+    verbs:
+      - get
+      - list
+  - apiGroups:
+    - networking.k8s.io
+    resources:
+      - networkpolicies
+    verbs:
+      - get
+      - list
+---
 kind: Deployment
 apiVersion: apps/v1
 metadata:
@@ -50,6 +87,9 @@ spec:
 {{ tuple $envAll $envAll.Values.pod.resources.ceph_utility | include "helm-toolkit.snippets.kubernetes_resources" | indent 10 }}
           command:
             - /tmp/bootstrap.sh
+          env:
+            - name: CLUSTER
+              value: "ceph"
           volumeMounts:
             - name: ceph-utility-bin
               mountPath: /tmp/bootstrap.sh
@@ -65,6 +105,10 @@ spec:
               readOnly: true
             - name: ceph-utility-bin
               mountPath: /usr/local/bin/ceph-utility-rootwrap
+              subPath: ceph-utility-rootwrap
+              readOnly: true
+            - name: ceph-utility-bin
+              mountPath: /tmp/osd-remove.sh
               subPath: ceph-utility-rootwrap
               readOnly: true
             - name: ceph-utility-sudoers
