@@ -91,6 +91,7 @@ conf:
       rados: CommandFilter, rados, root
       radosgw-admin: CommandFilter, radosgw-admin, root
       rbd: CommandFilter, rbd, root
+      osd-maintenance: CommandFilter, osd-maintenance, root
       # Below are examples of RegExpFilter. This will restict access to ceph cluster even with admin user
       #rbd00: RegExpFilter, rbd, root, rbd, (^((?!clone|copy|cp|create|export|export-diff|flatten|import|import-diff|map|merge-diff|pool|remove|rm|rename|mv|resize|unmap).)*$)
       #rbd01: RegExpFilter, rbd, root, rbd, image-meta, (^((?!get|remove|set).)*$)
@@ -113,7 +114,7 @@ conf:
       # explicitely specify a full path (separated by ',')
       # If not specified, defaults to system PATH environment variable.
       # These directories MUST all be only writeable by root !
-      exec_dirs: /sbin,/usr/sbin,/bin,/usr/bin,/usr/local/bin,/usr/local/sbin
+      exec_dirs: /sbin,/usr/sbin,/bin,/usr/bin,/usr/local/bin,/usr/local/sbin,/tmp
       # Enable logging to syslog
       # Default value is False
       use_syslog: True
