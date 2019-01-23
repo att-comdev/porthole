@@ -91,6 +91,7 @@ conf:
       rados: CommandFilter, rados, root
       radosgw-admin: CommandFilter, radosgw-admin, root
       rbd: CommandFilter, rbd, root
+      kubectl: CommandFilter, kubectl, root
       # Below are examples of RegExpFilter. This will restict access to ceph cluster even with admin user
       #rbd00: RegExpFilter, rbd, root, rbd, (^((?!clone|copy|cp|create|export|export-diff|flatten|import|import-diff|map|merge-diff|pool|remove|rm|rename|mv|resize|unmap).)*$)
       #rbd01: RegExpFilter, rbd, root, rbd, image-meta, (^((?!get|remove|set).)*$)
