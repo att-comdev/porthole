@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "fab37684_a1df025b",
+        "filename": "ceph-utility/templates/configmap-bin.yaml",
+        "patchSetId": 7
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-01-23T18:03:03Z",
+      "side": 1,
+      "message": "this have to be changed to osd-maintenance, otherwise we will get Executable not found: osd-maintenance when running from nccli",
+      "range": {
+        "startLine": 44,
+        "startChar": 2,
+        "endLine": 44,
+        "endChar": 20
+      },
+      "revId": "95aa708278e069c5e6191acf25d0f6eda91849cf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "f6f36469_23c4d7f6",
+        "filename": "ceph-utility/templates/deployment-utility.yaml",
+        "patchSetId": 7
+      },
+      "lineNbr": 75,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-01-23T18:03:03Z",
+      "side": 1,
+      "message": "osd-maintenance.sh have to be changed to osd-maintenance, otherwise we will get Executable not found: osd-maintenance when running from nccli",
+      "range": {
+        "startLine": 74,
+        "startChar": 14,
+        "endLine": 75,
+        "endChar": 41
+      },
+      "revId": "95aa708278e069c5e6191acf25d0f6eda91849cf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
