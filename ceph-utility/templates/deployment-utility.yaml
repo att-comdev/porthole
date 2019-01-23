@@ -20,6 +20,34 @@ limitations under the License.
 {{- $serviceAccountName := printf "%s" $envAll.Release.Name }}
 {{ tuple $envAll "utility" $serviceAccountName | include "helm-toolkit.snippets.kubernetes_pod_rbac_serviceaccount" }}
 ---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: Role
+metadata:
+  name: {{ $serviceAccountName }}
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - namespaces
+      - persistentvolumes
+    verbs:
+      - get
+      - list
+      - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: RoleBinding
+metadata:
+  name: {{ $serviceAccountName }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: {{ $serviceAccountName }}
+subjects:
+  - kind: ServiceAccount
+    name: {{ $serviceAccountName }}
+    namespace: {{ $envAll.Release.Namespace }}
+---
 kind: Deployment
 apiVersion: apps/v1
 metadata:
@@ -58,6 +86,10 @@ spec:
             - name: ceph-utility-bin
               mountPath: /tmp/managekey.sh
               subPath: managekey.sh
+              readOnly: true
+            - name: ceph-utility-bin
+              mountPath: /tmp/rbd_pvc.sh
+              subPath: rbd_pvc.sh
               readOnly: true
             - name: ceph-utility-bin
               mountPath: /usr/local/bin/nccli
