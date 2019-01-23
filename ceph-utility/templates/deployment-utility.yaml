@@ -20,6 +20,35 @@ limitations under the License.
 {{- $serviceAccountName := printf "%s" $envAll.Release.Name }}
 {{ tuple $envAll "utility" $serviceAccountName | include "helm-toolkit.snippets.kubernetes_pod_rbac_serviceaccount" }}
 ---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRole
+metadata:
+  name: {{ $serviceAccountName }}
+rules:
+  - apiGroups:
+      - ""
+    resources:
+      - namespaces
+      - persistentvolumeclaims
+      - persistentvolumes
+    verbs:
+      - get
+      - list
+      - watch
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  name: {{ $serviceAccountName }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: {{ $serviceAccountName }}
+subjects:
+  - kind: ServiceAccount
+    name: {{ $serviceAccountName }}
+    namespace: {{ $envAll.Release.Namespace }}
+---
 kind: Deployment
 apiVersion: apps/v1
 metadata:
@@ -60,6 +89,10 @@ spec:
               subPath: managekey.sh
               readOnly: true
             - name: ceph-utility-bin
+              mountPath: /tmp/rbd_pvc.sh
+              subPath: rbd_pvc.sh
+              readOnly: true
+            - name: ceph-utility-bin
               mountPath: /usr/local/bin/nccli
               subPath: nccli
               readOnly: true
@@ -86,6 +119,9 @@ spec:
               mountPath: /etc/ceph/rootwrap.conf
               subPath: rootwrap.conf
               readOnly: true
+            - name: pod-ceph-backup
+              mountPath: /backup
+              readOnly: false 
 
       volumes:
         - name: ceph-utility-sudoers
@@ -108,4 +144,8 @@ spec:
           secret:
             secretName: {{ .Values.secrets.keyrings.admin | quote }}
             defaultMode: 0600
+        - name: pod-ceph-backup
+          hostPath:
+            path: /var/lib/openstack-helm/ceph/backup
+            type: DirectoryOrCreate
 {{- end }}
