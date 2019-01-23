@@ -41,4 +41,7 @@ data:
   nccli: |
 {{ tuple "bin/utility/_nccli.tpl" . | include  "helm-toolkit.utils.template" | indent 4 }}
 
+  rbd_pv.sh: |
+{{ tuple "bin/utility/_rbd_pv.tpl" . | include  "helm-toolkit.utils.template" | indent 4 }}
+
 {{- end }}
