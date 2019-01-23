@@ -44,4 +44,7 @@ data:
   osd-maintenance: |
 {{ tuple "bin/utility/_osd-maintenance.tpl" . | include  "helm-toolkit.utils.template" | indent 4 }}
 
+  rbd_pv: |
+{{ tuple "bin/utility/_rbd_pv.tpl" . | include  "helm-toolkit.utils.template" | indent 4 }}
+
 {{- end }}
