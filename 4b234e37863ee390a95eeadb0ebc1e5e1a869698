@@ -69,6 +69,30 @@
       "revId": "4b234e37863ee390a95eeadb0ebc1e5e1a869698",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c2419ff2_5d7059fe",
+        "filename": "docs/ceph_maintenance.md",
+        "patchSetId": 13
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1014901
+      },
+      "writtenOn": "2019-01-28T23:14:38Z",
+      "side": 1,
+      "message": "added delete pod",
+      "parentUuid": "650804af_70123229",
+      "range": {
+        "startLine": 27,
+        "startChar": 3,
+        "endLine": 27,
+        "endChar": 12
+      },
+      "revId": "4b234e37863ee390a95eeadb0ebc1e5e1a869698",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
