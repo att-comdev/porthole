@@ -95,6 +95,30 @@
     },
     {
       "key": {
+        "uuid": "1ad84c1d_9981eaba",
+        "filename": "ceph-utility/templates/bin/utility/_rbd_pvc.tpl",
+        "patchSetId": 11
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1015440
+      },
+      "writtenOn": "2019-01-29T18:07:34Z",
+      "side": 1,
+      "message": "That is a hostpath to /opt/openstack-helm/ceph/backups",
+      "parentUuid": "95af88bb_8a2c6e36",
+      "range": {
+        "startLine": 66,
+        "startChar": 4,
+        "endLine": 66,
+        "endChar": 25
+      },
+      "revId": "e16a2818e69410b1ba9aa6a64a29c6779d2e603b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c70627cd_55ba6c21",
         "filename": "ceph-utility/templates/deployment-utility.yaml",
         "patchSetId": 11
