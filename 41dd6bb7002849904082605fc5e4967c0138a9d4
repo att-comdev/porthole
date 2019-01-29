@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "97b35458_6558fa36",
+        "filename": "ceph-utility/templates/deployment-utility.yaml",
+        "patchSetId": 17
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-01-29T15:57:17Z",
+      "side": 1,
+      "message": "if we set this as env, it is set to the profile of user nobody, which the utility container starts and if this is consumed in script, it will give empty value as we are using rootwrap to trigger the cli.",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 27
+      },
+      "revId": "41dd6bb7002849904082605fc5e4967c0138a9d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
