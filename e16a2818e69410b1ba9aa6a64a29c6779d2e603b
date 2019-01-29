@@ -142,6 +142,30 @@
     },
     {
       "key": {
+        "uuid": "a5b88575_4a33d04b",
+        "filename": "ceph-utility/templates/deployment-utility.yaml",
+        "patchSetId": 11
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1015440
+      },
+      "writtenOn": "2019-01-29T18:21:22Z",
+      "side": 1,
+      "message": "From the POD, if they give an arguement to a different backup location then the script will check to see if that location exists and error out if it doesn\u0027t.",
+      "parentUuid": "c70627cd_55ba6c21",
+      "range": {
+        "startLine": 123,
+        "startChar": 25,
+        "endLine": 123,
+        "endChar": 32
+      },
+      "revId": "e16a2818e69410b1ba9aa6a64a29c6779d2e603b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d10a6ec9_ff38ad89",
         "filename": "ceph-utility/templates/deployment-utility.yaml",
         "patchSetId": 11
@@ -153,6 +177,30 @@
       "writtenOn": "2019-01-29T18:00:34Z",
       "side": 1,
       "message": "I think this should probably be made configurable via values overrides in a similar fashion to the ceph-osd and ceph-mon charts",
+      "range": {
+        "startLine": 149,
+        "startChar": 18,
+        "endLine": 149,
+        "endChar": 53
+      },
+      "revId": "e16a2818e69410b1ba9aa6a64a29c6779d2e603b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7af8848c_6ff5c8c6",
+        "filename": "ceph-utility/templates/deployment-utility.yaml",
+        "patchSetId": 11
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 1015440
+      },
+      "writtenOn": "2019-01-29T18:21:22Z",
+      "side": 1,
+      "message": "Okay done",
+      "parentUuid": "d10a6ec9_ff38ad89",
       "range": {
         "startLine": 149,
         "startChar": 18,
