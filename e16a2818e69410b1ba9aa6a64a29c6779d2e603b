@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "95af88bb_8a2c6e36",
+        "filename": "ceph-utility/templates/bin/utility/_rbd_pvc.tpl",
+        "patchSetId": 11
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-01-29T15:38:23Z",
+      "side": 1,
+      "message": "its good to use hostpath or pv for saving the backup and also if we are able to drive the destination directory from chart values",
+      "range": {
+        "startLine": 66,
+        "startChar": 4,
+        "endLine": 66,
+        "endChar": 25
+      },
+      "revId": "e16a2818e69410b1ba9aa6a64a29c6779d2e603b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
