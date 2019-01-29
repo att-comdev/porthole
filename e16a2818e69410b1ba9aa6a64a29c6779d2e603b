@@ -95,6 +95,52 @@
     },
     {
       "key": {
+        "uuid": "c70627cd_55ba6c21",
+        "filename": "ceph-utility/templates/deployment-utility.yaml",
+        "patchSetId": 11
+      },
+      "lineNbr": 123,
+      "author": {
+        "id": 1012474
+      },
+      "writtenOn": "2019-01-29T18:00:34Z",
+      "side": 1,
+      "message": "I know /backup is used as the default if none is supplied, but how does this perform in a case where an argument IS supplied that\u0027s an invalid path?",
+      "range": {
+        "startLine": 123,
+        "startChar": 25,
+        "endLine": 123,
+        "endChar": 32
+      },
+      "revId": "e16a2818e69410b1ba9aa6a64a29c6779d2e603b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "d10a6ec9_ff38ad89",
+        "filename": "ceph-utility/templates/deployment-utility.yaml",
+        "patchSetId": 11
+      },
+      "lineNbr": 149,
+      "author": {
+        "id": 1012474
+      },
+      "writtenOn": "2019-01-29T18:00:34Z",
+      "side": 1,
+      "message": "I think this should probably be made configurable via values overrides in a similar fashion to the ceph-osd and ceph-mon charts",
+      "range": {
+        "startLine": 149,
+        "startChar": 18,
+        "endLine": 149,
+        "endChar": 53
+      },
+      "revId": "e16a2818e69410b1ba9aa6a64a29c6779d2e603b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "fcc61bf0_f1c105a0",
         "filename": "docs/rbd_pvc.md",
         "patchSetId": 11
