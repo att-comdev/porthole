@@ -22,6 +22,30 @@
       "revId": "41dd6bb7002849904082605fc5e4967c0138a9d4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "75347383_b0fb8866",
+        "filename": "ceph-utility/templates/deployment-utility.yaml",
+        "patchSetId": 17
+      },
+      "lineNbr": 55,
+      "author": {
+        "id": 1014901
+      },
+      "writtenOn": "2019-01-29T16:01:56Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "97b35458_6558fa36",
+      "range": {
+        "startLine": 53,
+        "startChar": 0,
+        "endLine": 55,
+        "endChar": 27
+      },
+      "revId": "41dd6bb7002849904082605fc5e4967c0138a9d4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
