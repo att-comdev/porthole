@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1875e2dd_773a8ca9",
+        "filename": "ceph-utility/templates/bin/utility/_rbd_pv.tpl",
+        "patchSetId": 13
+      },
+      "lineNbr": 80,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-02-05T20:34:51Z",
+      "side": 1,
+      "message": "remove the whitespace",
+      "revId": "72a64fa85991164c8e08632405422b0d76e205d5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
