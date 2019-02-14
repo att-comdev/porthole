@@ -18,7 +18,7 @@ RUN set -xe \
     && apt-get update && apt-get install -y wget curl apt-transport-https gnupg\
     && wget -q -O- 'https://download.ceph.com/keys/release.asc' | apt-key add - \
     && echo deb https://download.ceph.com/debian-${CEPH_RELEASE}/ ${UBUNTU_RELEASE} main | tee /etc/apt/sources.list.d/ceph.list \
-    && apt-get update && apt-get install -y bash python-oslo.rootwrap moreutils vim sudo screen ceph-common python-rbd radosgw rsyslog x11-apps jq \
+    && apt-get update && apt-get install -y bash python-oslo.rootwrap moreutils vim sudo screen ceph-common python-rbd radosgw rsyslog x11-apps jq swift-bench\
     && apt-get remove --purge -y wget apt-transport-https && apt-get autoremove -y && apt-get clean && rm -rf /var/lib/apt/lists/* \
     && curl -sSL https://bootstrap.pypa.io/get-pip.py | python \
     && pip --no-cache-dir install --upgrade crush
