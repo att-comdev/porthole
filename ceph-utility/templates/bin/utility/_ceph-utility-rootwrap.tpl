@@ -16,7 +16,18 @@ limitations under the License.
 */}}
 # PBR Generated from u'console_scripts'
 import sys
+import os
+import syslog
 from oslo_rootwrap.cmd import main
 
-if __name__ == "__main__":
-    sys.exit(main())
+if "AUSER" in os.environ:
+    if __name__ == "__main__":
+        sys.exit(main())
+elif "AUSER" not in os.environ and 'c1' == '{{ .Values.conf.utility.location_corridor }}':
+    os.environ["AUSER"] = "devlab"
+    if __name__ == "__main__":
+        sys.exit(main())
+else:
+    syslog.syslog('User environment not configured properly, please follow the steps as mentioned on wiki to execute commands on a utility container')
+    print("User environment not configured properly, please follow the steps as mentioned on wiki to execute commands on a utility container")
+    exit()
