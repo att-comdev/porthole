@@ -1,6 +1,6 @@
 #!/usr/bin/python
 {{/*
-Copyright 2017 The Openstack-Helm Authors.
+Copyright 2019 The Openstack-Helm Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -16,7 +16,38 @@ limitations under the License.
 */}}
 # PBR Generated from u'console_scripts'
 import sys
+import os
+import logging
+import getpass
 from oslo_rootwrap.cmd import main
+
+
+exec_name = sys.argv[0]
+host_name = os.environ.get("HOSTNAME")
+log_level = {{ .Values.conf.cephrootwrap.DEFAULT.syslog_log_level | quote }}
+facility = {{ .Values.conf.cephrootwrap.DEFAULT.syslog_log_facility | quote }}
+
+if "AUSER" in os.environ:
+    userName = os.environ["AUSER"]
+elif "AUSER" not in os.environ and 'c1' == '{{ .Values.conf.utility.location_corridor }}':
+    os.environ["AUSER"] = getpass.getuser()
+    userName = os.environ["AUSER"]
+else:
+    print("User environment not configured properly, please follow the steps as mentioned on wiki to execute commands on a utility container")
+    exit()
+
+try:
+    handler = logging.handlers.SysLogHandler(address='/dev/log',facility=facility)
+except IOError:
+    print("Unable to setup logging, So access to pod can't be established")
+    exit()
+
+formatter = logging.Formatter('%(asctime)s ' + host_name + ' ' + '%(levelname)s' +
+    os.path.basename(exec_name) + ': ' + 'ActualUser=' + userName + ': %(message)s')
+handler.setFormatter(formatter)
+root = logging.getLogger()
+root.setLevel(log_level)
+root.addHandler(handler)
 
 if __name__ == "__main__":
     sys.exit(main())
