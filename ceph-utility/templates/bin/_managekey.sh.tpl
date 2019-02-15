@@ -1,6 +1,6 @@
 #!/bin/bash
 {{/*
-Copyright 2017 The Openstack-Helm Authors.
+Copyright 2019 The Openstack-Helm Authors.
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
@@ -23,3 +23,10 @@ done < "$input"
 chmod 600 /etc/ceph/ceph.client.admin.keyring
 sed -i 's/$PrivDropToUser syslog/$PrivDropToUser nobody/' /etc/rsyslog.conf
 /etc/init.d/rsyslog restart
+# As of now all the commands executed inside utility container are being logged in /var/log.
+# We need to change the logging.Formatter to include UserName and loglevel and also remove 
+# duplicate entry of commands being populated in /var/log
+sed -i "/rootwrap_logger.setLevel/s/.*/#&/" /usr/lib/python2.7/dist-packages/oslo_rootwrap/wrapper.py
+sed -i "/handler.setFormatter/s/.*/#&/" /usr/lib/python2.7/dist-packages/oslo_rootwrap/wrapper.py
+sed -i "/os.path.basename/s/.*/#&/" /usr/lib/python2.7/dist-packages/oslo_rootwrap/wrapper.py
+sed -i "/rootwrap_logger.addHandler/s/.*/#&/" /usr/lib/python2.7/dist-packages/oslo_rootwrap/wrapper.py
