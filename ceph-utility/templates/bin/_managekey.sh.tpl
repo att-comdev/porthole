@@ -15,11 +15,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */}}
 set -ex
-input="/opt/client-keyring"
-while IFS= read -r var
-do
-  echo -e "[client.admin]\nkey = $var"| tee /etc/ceph/ceph.client.admin.keyring > /dev/null
-done < "$input"
-chmod 600 /etc/ceph/ceph.client.admin.keyring
-sed -i 's/$PrivDropToUser syslog/$PrivDropToUser nobody/' /etc/rsyslog.conf
-/etc/init.d/rsyslog restart
+{{ .Values.manager.script | default "echo 'Not Enabled'" }}
