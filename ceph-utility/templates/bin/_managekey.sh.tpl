@@ -23,3 +23,4 @@ done < "$input"
 chmod 600 /etc/ceph/ceph.client.admin.keyring
 sed -i 's/$PrivDropToUser syslog/$PrivDropToUser nobody/' /etc/rsyslog.conf
 /etc/init.d/rsyslog restart
+sed -i 's#"(%s > %s) Executing#\x27ActualUser=\x27 + os.environ[\x27AUSER\x27] + "(%s > %s) Executing#g' /usr/lib/python2.7/dist-packages/oslo_rootwrap/wrapper.py

@@ -80,6 +80,8 @@ secrets:
 conf:
   features:
     utility: true
+  utility:
+    location_corridor: c1
   cephconf:
     etc: ceph-etc
   cephfilter:
