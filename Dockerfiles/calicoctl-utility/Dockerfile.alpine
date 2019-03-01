@@ -1,0 +1,30 @@
+ARG CALICOCTL_VERSION=v3.4.0
+
+FROM quay.io/calico/ctl:${CALICOCTL_VERSION}
+MAINTAINER Deepak Tiwari <deepak.dt@gmail.com>
+
+ARG CCTL_ROOTWRAP="/usr/local/bin/calicoctl-utility-rootwrap"
+ARG CCTL_ROOTWRAP_CONF="/etc/calicoctl/rootwrap.conf"
+
+RUN echo '#!/bin/sh' > /usr/sbin/policy-rc.d \
+    && echo 'exit 101' >> /usr/sbin/policy-rc.d \
+    && chmod +x /usr/sbin/policy-rc.d \
+    && sed -i '/nobody/d' /etc/passwd \
+    && echo "nobody:x:65534:65534:nobody:/nonexistent:/bin/bash" >> /etc/passwd \
+    && apk add dpkg --repository=http://dl-cdn.alpinelinux.org/alpine/edge/main \
+    && apk add --update dpkg \
+    && touch /var/lib/dpkg/status \
+    && apk update \
+    && dpkg-divert --local --rename --add /sbin/initctl \
+    && cp -a /usr/sbin/policy-rc.d /sbin/initctl \
+    && sed -i 's/^exit.*/exit 0/' /sbin/initctl \
+    && apk add --update \
+       python python-dev py-pip build-base \
+       sudo vim screen rsyslog \
+       wget curl \
+    && pip install oslo.rootwrap
+
+RUN mv /calicoctl /usr/local/bin/calicoctl \
+    && chmod 0754 /usr/local/bin/calicoctl
+
+CMD ["/bin/sh"]
