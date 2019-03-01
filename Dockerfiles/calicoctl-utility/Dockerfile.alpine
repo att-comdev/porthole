@@ -1,0 +1,24 @@
+ARG CALICOCTL_VERSION=v3.4.0
+
+FROM quay.io/calico/ctl:${CALICOCTL_VERSION}
+MAINTAINER Deepak Tiwari <deepak.dt@gmail.com>
+
+ARG CALICO_GRP_ID=99
+ARG CALICO_USER_ID=981
+ARG CCTL_ROOTWRAP="/usr/local/bin/calicoctl-utility-rootwrap"
+ARG CCTL_ROOTWRAP_CONF="/etc/calicoctl/rootwrap.conf"
+
+RUN apk add --update \
+    python python-dev py-pip build-base \
+    sudo vim screen rsyslog \
+    wget curl \
+ && pip install oslo.rootwrap
+
+RUN cp /calicoctl /usr/local/bin/calicoctl
+RUN addgroup -S -g ${CALICO_GRP_ID} calicogroup && adduser -S -D -G calicogroup -s /bin/ash -u ${CALICO_USER_ID} calicouser
+RUN echo "calicouser ALL = (root) NOPASSWD: ${CCTL_ROOTWRAP} ${CCTL_ROOTWRAP_CONF} *" >> /etc/sudoers.d/calicouser
+USER calicouser
+
+WORKDIR /home/calicouser
+
+CMD ["/bin/sh"]
