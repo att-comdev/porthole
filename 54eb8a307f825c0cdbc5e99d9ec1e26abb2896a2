@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a019e369_c333115f",
+        "filename": "Dockerfiles/calicoctl-utility/Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1016091
+      },
+      "writtenOn": "2019-03-02T21:10:29Z",
+      "side": 1,
+      "message": "calico",
+      "range": {
+        "startLine": 24,
+        "startChar": 8,
+        "endLine": 24,
+        "endChar": 12
+      },
+      "revId": "54eb8a307f825c0cdbc5e99d9ec1e26abb2896a2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0ec9d6f9_8f5375e5",
+        "filename": "Dockerfiles/calicoctl-utility/Makefile",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 1016091
+      },
+      "writtenOn": "2019-03-02T21:10:29Z",
+      "side": 1,
+      "message": "Shouldn\u0027t this be IMAGE_TAG ?",
+      "range": {
+        "startLine": 35,
+        "startChar": 29,
+        "endLine": 35,
+        "endChar": 46
+      },
+      "revId": "54eb8a307f825c0cdbc5e99d9ec1e26abb2896a2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
