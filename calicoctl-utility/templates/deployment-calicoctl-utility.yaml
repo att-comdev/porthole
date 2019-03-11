@@ -1,0 +1,158 @@
+{{/*
+Copyright 2017 The Openstack-Helm Authors.
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+   http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+*/}}
+
+{{- if .Values.manifests.deployment_calicoctl_utility }}
+{{- $envAll := . }}
+
+{{- $serviceAccountName := printf "%s" $envAll.Release.Name }}
+{{ tuple $envAll "utility" $serviceAccountName | include "helm-toolkit.snippets.kubernetes_pod_rbac_serviceaccount" }}
+---
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata:
+  name: {{ $serviceAccountName }}
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: ClusterRole
+  name: {{ $serviceAccountName }}
+subjects:
+- kind: ServiceAccount
+  name: {{ $serviceAccountName }}
+  namespace: {{ .Release.Namespace }}
+---
+kind: ClusterRole
+apiVersion: rbac.authorization.k8s.io/v1beta1
+metadata:
+  name: {{ $serviceAccountName }}
+rules:
+  - apiGroups: [""]
+    resources:
+      - namespaces
+      - nodes
+      - pods
+    verbs:
+      - get
+      - list
+  - apiGroups: ["crd.projectcalico.org"]
+    resources:
+      - bgppeers
+      - bgpconfigurations
+      - clusterinformations
+      - felixconfigurations
+      - globalnetworkpolicies
+      - ippools
+      - networkpolicies
+    verbs:
+      - get
+      - list
+---
+kind: Deployment
+apiVersion: apps/v1
+metadata:
+  name: {{ printf "%s" $envAll.Release.Name }}
+  labels:
+{{ tuple $envAll "calicoctl" "utility" | include "helm-toolkit.snippets.kubernetes_metadata_labels" | indent 4 }}
+spec:
+  replicas: {{ .Values.pod.replicas.utility }}
+  selector:
+    matchLabels:
+{{ tuple $envAll "calicoctl" "utility" | include "helm-toolkit.snippets.kubernetes_metadata_labels" | indent 6 }}
+  template:
+    metadata:
+      name: {{ printf "%s" $envAll.Release.Name }}
+      labels:
+{{ tuple $envAll "calicoctl" "utility" | include "helm-toolkit.snippets.kubernetes_metadata_labels" | indent 8 }}
+      annotations:
+        configmap-bin-hash: {{ tuple "configmap-bin.yaml" . | include "helm-toolkit.utils.hash" }}
+        configmap-etc-hash: {{ tuple "configmap-etc.yaml" . | include "helm-toolkit.utils.hash" }}
+    spec:
+      securityContext:
+        runAsUser: {{ $envAll.Values.pod.sec_context.run_as_user }}
+        allowPrivilegeEscalation: false
+      serviceAccountName: {{ $serviceAccountName }}
+      nodeSelector:
+        {{ .Values.labels.utility.node_selector_key }}: {{ .Values.labels.utility.node_selector_value }}
+      containers:
+        - name: {{ printf "%s" $envAll.Release.Name }}
+{{ tuple $envAll "calicoctl_utility" | include "helm-toolkit.snippets.image" | indent 10 }}
+{{ tuple $envAll $envAll.Values.pod.resources.calicoctl_utility | include "helm-toolkit.snippets.kubernetes_resources" | indent 10 }}
+          command:
+            - "/bin/sh"
+            - "-c"
+            - "while true; do sleep 3600; done"
+          readinessProbe:
+            exec:
+              command:
+                - nccli
+                - calicoctl
+                - version
+            initialDelaySeconds: 5
+            periodSeconds: 15
+          livenessProbe:
+            exec:
+              command:
+                - nccli
+                - calicoctl
+                - version
+            initialDelaySeconds: 5
+            periodSeconds: 15
+          volumeMounts:
+            - name: calico-etcd-secrets
+              mountPath: {{ .Values.endpoints.etcd.auth.client.path.ca }}
+              subPath: tls.ca
+              readOnly: true
+            - name: calico-etcd-secrets
+              mountPath: {{ .Values.endpoints.etcd.auth.client.path.crt }}
+              subPath: tls.crt
+              readOnly: true
+            - name: calico-etcd-secrets
+              mountPath: {{ .Values.endpoints.etcd.auth.client.path.key }}
+              subPath: tls.key
+              readOnly: true
+            - name: calicoctl-utility-bin
+              mountPath: /usr/local/bin/nccli
+              subPath: nccli
+              readOnly: true
+            - name: calicoctl-utility-bin
+              mountPath: /usr/local/bin/calicoctl-utility-rootwrap
+              subPath: calicoctl-utility-rootwrap
+              readOnly: true
+            - name: calicoctl-utility-etc
+              mountPath: /etc/calicoctl/rootwrap.d/calicoctl.filter
+              subPath: calicoctl.filter
+              readOnly: true
+            - name: calicoctl-utility-etc
+              mountPath: /etc/calicoctl/rootwrap.conf
+              subPath: rootwrap.conf
+              readOnly: true
+            - name: calicoctl-utility-etc
+              mountPath: /etc/calico/calicoctl.cfg
+              subPath: calicoctl.cfg
+              readOnly: true
+      volumes:
+        - name: calicoctl-utility-bin
+          configMap:
+            name: {{ printf "%s-%s" $envAll.Release.Name "bin" }}
+            defaultMode: 0555
+        - name: calicoctl-utility-etc
+          configMap:
+            name: {{ printf "%s-%s" $envAll.Release.Name "etc" }}
+            defaultMode: 0400
+        - name: calico-etcd-secrets
+          secret:
+            secretName: calico-etcd-secrets
+            defaultMode: 0400
+{{- end }}
