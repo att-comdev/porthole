@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4dbffc0a_dcb0a5b3",
+        "filename": "Dockerfiles/calicoctl-utility/Dockerfile.alpine",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-03-11T15:51:44Z",
+      "side": 1,
+      "message": "why is that needed?",
+      "range": {
+        "startLine": 13,
+        "startChar": 4,
+        "endLine": 13,
+        "endChar": 79
+      },
+      "revId": "8283b75b106347748d86722ae9dc17e2f4efd597",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ecbaa3d8_392a0ecc",
+        "filename": "Dockerfiles/calicoctl-utility/Dockerfile.alpine",
+        "patchSetId": 4
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-03-11T15:51:44Z",
+      "side": 1,
+      "message": "i don\u0027t understand what\u0027s going on here\n\nwe have an alpine container\n\nwe add debian dpkg\n\nthen we use dpkg to divert files?\n\nand pip (from alpine?) to install rootwrap?",
+      "range": {
+        "startLine": 18,
+        "startChar": 4,
+        "endLine": 18,
+        "endChar": 56
+      },
+      "revId": "8283b75b106347748d86722ae9dc17e2f4efd597",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "da3cc27d_5338d8ee",
+        "filename": "Dockerfiles/calicoctl-utility/README",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-03-11T15:51:44Z",
+      "side": 1,
+      "message": "wrap \u0026 trailing \u0027dot\u0027",
+      "range": {
+        "startLine": 4,
+        "startChar": 91,
+        "endLine": 4,
+        "endChar": 143
+      },
+      "revId": "8283b75b106347748d86722ae9dc17e2f4efd597",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
