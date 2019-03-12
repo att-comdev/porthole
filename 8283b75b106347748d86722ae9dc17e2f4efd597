@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "4d725faf_d5f817fd",
+        "filename": "Dockerfiles/calicoctl-utility/Dockerfile.alpine",
+        "patchSetId": 4
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1014586
+      },
+      "writtenOn": "2019-03-12T20:33:03Z",
+      "side": 1,
+      "message": "This nobody entry is added so that the charts can later run it as this user, i.e.\n      securityContext:\n        runAsUser: 65534\n\nThe wiki also mentions it: https://wiki.web.labs.att.com/display/NCID/11-207-07%3A+Calicoctl+Utility+Container",
+      "parentUuid": "4dbffc0a_dcb0a5b3",
+      "range": {
+        "startLine": 13,
+        "startChar": 4,
+        "endLine": 13,
+        "endChar": 79
+      },
+      "revId": "8283b75b106347748d86722ae9dc17e2f4efd597",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "ecbaa3d8_392a0ecc",
         "filename": "Dockerfiles/calicoctl-utility/Dockerfile.alpine",
         "patchSetId": 4
@@ -36,6 +60,30 @@
       "writtenOn": "2019-03-11T15:51:44Z",
       "side": 1,
       "message": "i don\u0027t understand what\u0027s going on here\n\nwe have an alpine container\n\nwe add debian dpkg\n\nthen we use dpkg to divert files?\n\nand pip (from alpine?) to install rootwrap?",
+      "range": {
+        "startLine": 18,
+        "startChar": 4,
+        "endLine": 18,
+        "endChar": 56
+      },
+      "revId": "8283b75b106347748d86722ae9dc17e2f4efd597",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "be87ffdf_6e398201",
+        "filename": "Dockerfiles/calicoctl-utility/Dockerfile.alpine",
+        "patchSetId": 4
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1014586
+      },
+      "writtenOn": "2019-03-12T20:33:03Z",
+      "side": 1,
+      "message": "I am also not too sure about it. But I added it here taking reference from ceph-utility Dockerfile:-\n\nhttps://github.com/att-comdev/porthole/blob/master/Dockerfiles/ceph-utility/Dockerfile.ubuntu\n\nI guess its done to divert all the packages\u0027 versions installed via apk add --update (here in alpine case and apt-get install for Ubuntu case). Why its being done, I also couldn\u0027t appreciate much.....",
+      "parentUuid": "ecbaa3d8_392a0ecc",
       "range": {
         "startLine": 18,
         "startChar": 4,
@@ -68,6 +116,30 @@
       "revId": "8283b75b106347748d86722ae9dc17e2f4efd597",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "c4edfcb1_f1b276d4",
+        "filename": "Dockerfiles/calicoctl-utility/README",
+        "patchSetId": 4
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1014586
+      },
+      "writtenOn": "2019-03-12T20:33:03Z",
+      "side": 1,
+      "message": "Corrected",
+      "parentUuid": "da3cc27d_5338d8ee",
+      "range": {
+        "startLine": 4,
+        "startChar": 91,
+        "endLine": 4,
+        "endChar": 143
+      },
+      "revId": "8283b75b106347748d86722ae9dc17e2f4efd597",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
