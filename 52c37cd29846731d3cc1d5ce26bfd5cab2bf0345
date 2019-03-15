@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "07d08bf9_b20e8884",
+        "filename": "Dockerfiles/calicoctl-utility/Dockerfile.alpine",
+        "patchSetId": 5
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1011593
+      },
+      "writtenOn": "2019-03-15T22:02:01Z",
+      "side": 1,
+      "message": "Do we need this line to be configurable so that we can pull the base from Artifactory and not quay?",
+      "revId": "52c37cd29846731d3cc1d5ce26bfd5cab2bf0345",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a3afc9ff_2d4afd71",
+        "filename": "Dockerfiles/calicoctl-utility/Makefile",
+        "patchSetId": 5
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1011593
+      },
+      "writtenOn": "2019-03-15T22:02:01Z",
+      "side": 1,
+      "message": "Can we update this to use similar parameters as the airship components Makefile?\nSince this will be built internally, it needs the ability for labels, needs to be able to override the FROM arg in the image, etc.",
+      "revId": "52c37cd29846731d3cc1d5ce26bfd5cab2bf0345",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
