@@ -157,6 +157,9 @@ dependencies:
 
 bootstrap:
   enabled: true
+  script: |
+    sudo ./tmp/managekey.sh
+    tail -f /var/log/syslog
 
 endpoints:
   cluster_domain_suffix: cluster.local

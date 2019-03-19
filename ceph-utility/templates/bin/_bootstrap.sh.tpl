@@ -15,5 +15,4 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */}}
 set -ex
-sudo ./tmp/managekey.sh
-tail -f /var/log/syslog
+{{ .Values.bootstrap.script | default "echo 'Not Enabled'" }}
