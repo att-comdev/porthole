@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ce613fb7_de41ecdb",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 5
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-03-26T21:43:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "5f7339a0_c24e1cae",
+      "range": {
+        "startLine": 7,
+        "startChar": 51,
+        "endLine": 7,
+        "endChar": 52
+      },
+      "revId": "1a40a0907990334ee0a101ace283e46c817e4518",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b186f23b_728ae872",
         "filename": "calicoctl-utility/Chart.yaml",
         "patchSetId": 5
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "b23b7f24_6161e990",
+        "filename": "calicoctl-utility/Chart.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-03-26T21:43:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "b186f23b_728ae872",
+      "range": {
+        "startLine": 1,
+        "startChar": 12,
+        "endLine": 1,
+        "endChar": 17
+      },
+      "revId": "1a40a0907990334ee0a101ace283e46c817e4518",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "c02ec118_1e1a7470",
         "filename": "calicoctl-utility/requirements.yaml",
         "patchSetId": 5
@@ -68,6 +116,30 @@
       "revId": "1a40a0907990334ee0a101ace283e46c817e4518",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "254a1082_04b82c3d",
+        "filename": "calicoctl-utility/requirements.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-03-26T21:43:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "c02ec118_1e1a7470",
+      "range": {
+        "startLine": 1,
+        "startChar": 12,
+        "endLine": 1,
+        "endChar": 17
+      },
+      "revId": "1a40a0907990334ee0a101ace283e46c817e4518",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     },
     {
       "key": {
@@ -117,6 +189,30 @@
     },
     {
       "key": {
+        "uuid": "3a1a4d83_eaaa1476",
+        "filename": "calicoctl-utility/templates/bin/_nccli-sudo.tpl",
+        "patchSetId": 5
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-03-26T21:43:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "ba393d5b_3f146cbc",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 25
+      },
+      "revId": "1a40a0907990334ee0a101ace283e46c817e4518",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "87e68ab5_3b764f53",
         "filename": "calicoctl-utility/templates/bin/_version_check.sh.tpl",
         "patchSetId": 5
@@ -137,6 +233,30 @@
       "revId": "1a40a0907990334ee0a101ace283e46c817e4518",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "b9f49e47_3bc80c69",
+        "filename": "calicoctl-utility/templates/bin/_version_check.sh.tpl",
+        "patchSetId": 5
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-03-26T21:43:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "87e68ab5_3b764f53",
+      "range": {
+        "startLine": 20,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 73
+      },
+      "revId": "1a40a0907990334ee0a101ace283e46c817e4518",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     },
     {
       "key": {
@@ -163,6 +283,30 @@
     },
     {
       "key": {
+        "uuid": "3767e3cb_cbf1b9d8",
+        "filename": "calicoctl-utility/templates/deployment-calicoctl-utility.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 67,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-03-26T21:43:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "4b457774_affaa4eb",
+      "range": {
+        "startLine": 67,
+        "startChar": 11,
+        "endLine": 67,
+        "endChar": 113
+      },
+      "revId": "1a40a0907990334ee0a101ace283e46c817e4518",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "0a2108c5_283e047f",
         "filename": "calicoctl-utility/templates/deployment-calicoctl-utility.yaml",
         "patchSetId": 5
@@ -186,6 +330,30 @@
     },
     {
       "key": {
+        "uuid": "97f16ba3_f401bc7e",
+        "filename": "calicoctl-utility/templates/deployment-calicoctl-utility.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 72,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-03-26T21:43:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "0a2108c5_283e047f",
+      "range": {
+        "startLine": 72,
+        "startChar": 9,
+        "endLine": 72,
+        "endChar": 37
+      },
+      "revId": "1a40a0907990334ee0a101ace283e46c817e4518",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "e4d8890e_0541e65d",
         "filename": "calicoctl-utility/templates/deployment-calicoctl-utility.yaml",
         "patchSetId": 5
@@ -206,6 +374,30 @@
       "revId": "1a40a0907990334ee0a101ace283e46c817e4518",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5ce07919_8201297a",
+        "filename": "calicoctl-utility/templates/deployment-calicoctl-utility.yaml",
+        "patchSetId": 5
+      },
+      "lineNbr": 77,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-03-26T21:43:11Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "e4d8890e_0541e65d",
+      "range": {
+        "startLine": 77,
+        "startChar": 9,
+        "endLine": 77,
+        "endChar": 38
+      },
+      "revId": "1a40a0907990334ee0a101ace283e46c817e4518",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
