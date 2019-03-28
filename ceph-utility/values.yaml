@@ -38,6 +38,13 @@ labels:
     node_selector_key: openstack-helm-node-class
     node_selector_value: primary
 
+network_policy:
+  ceph:
+    ingress:
+      - {}
+    egress:
+      - {}
+
 pod:
   dns_policy: "ClusterFirstWithHostNet"
   replicas:
@@ -182,3 +189,4 @@ manifests:
   configmap_etc_client: true
   configmap_etc_sudoers: true
   deployment_utility: true
+  network_policy: false
