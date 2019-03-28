@@ -77,6 +77,17 @@ secrets:
   keyrings:
     admin: pvc-ceph-client-key
 
+network_policy:
+  ceph-utility:
+    egress:
+      - to:
+        - namespaceSelector:
+            matchLabels:
+              name: ceph
+        - podSelector:
+            matchLabels:
+              name: ceph-mon
+
 conf:
   features:
     utility: true
@@ -182,3 +193,4 @@ manifests:
   configmap_etc_client: true
   configmap_etc_sudoers: true
   deployment_utility: true
+  network_policy: false
