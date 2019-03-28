@@ -38,6 +38,27 @@ labels:
     node_selector_key: openstack-helm-node-class
     node_selector_value: primary
 
+network_policy:
+  ceph:
+    podSelector:
+      matchLabels:
+        component: utility
+    policyTypes:
+    - Egress
+    - Ingress
+    egress:
+    - ports:
+      - {}
+    - to:
+      - namespaceSelector:
+          matchLabels:
+            name: kube-system
+        podSelector:
+          matchLabels:
+            application: kubernetes
+            component: coredns
+
+
 pod:
   dns_policy: "ClusterFirstWithHostNet"
   replicas:
@@ -182,3 +203,4 @@ manifests:
   configmap_etc_client: true
   configmap_etc_sudoers: true
   deployment_utility: true
+  network_policy: false
