@@ -182,3 +182,4 @@ manifests:
   configmap_etc_client: true
   configmap_etc_sudoers: true
   deployment_utility: true
+  network_policy: false
