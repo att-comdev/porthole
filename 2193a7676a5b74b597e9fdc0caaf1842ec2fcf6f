@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "912e7ffd_ebe7eeb3",
+        "filename": "ceph-utility/templates/network_policy.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1014185
+      },
+      "writtenOn": "2019-03-29T20:21:45Z",
+      "side": 1,
+      "message": "this can be removed.",
+      "range": {
+        "startLine": 39,
+        "startChar": 0,
+        "endLine": 42,
+        "endChar": 20
+      },
+      "revId": "2193a7676a5b74b597e9fdc0caaf1842ec2fcf6f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ef1e83e7_19bfea5e",
+        "filename": "ceph-utility/templates/network_policy.yaml",
+        "patchSetId": 3
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1014185
+      },
+      "writtenOn": "2019-03-29T20:21:45Z",
+      "side": 1,
+      "message": "this can be removed.",
+      "range": {
+        "startLine": 47,
+        "startChar": 0,
+        "endLine": 50,
+        "endChar": 23
+      },
+      "revId": "2193a7676a5b74b597e9fdc0caaf1842ec2fcf6f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
