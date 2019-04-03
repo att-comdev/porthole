@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b8c8adbe_9307b267",
+        "filename": "ceph-utility/templates/bin/utility/_ceph-utility-rootwrap.tpl",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1010324
+      },
+      "writtenOn": "2019-04-03T15:44:11Z",
+      "side": 1,
+      "message": "why?",
+      "revId": "cf3654703e09597d61c4a3095ddf585ba625a432",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
