@@ -1,5 +1,10 @@
 #!/bin/bash
-set -xe
+set -e
+
+if [ ${#} -lt 1 ] ; then
+  echo "$0 [https url of the server]"
+  exit 1
+fi
 
 proxy="http://one.proxy.att.com:8888"
 export http_proxy=${proxy}
@@ -13,6 +18,7 @@ apt-get install -y kubectl
 
 : ${USER_HOME:=$HOME}
 : ${USER_KUBECFG:=$USER_HOME/.kube/conf}
+URL:=$1
 
 
 if [ ! -d ${USER_HOME}/.kube ]; then
@@ -25,7 +31,7 @@ if [ ! -f ${USER_KUBECFG} ]; then
 apiVersion: v1
 clusters:
  -cluster:
-   server: https://127.0.0.1:6553
+   server: ${URL}:6553
    certificate-authority: pki/cluster-ca.pm
    name: kubernetes
 contexts:
@@ -44,3 +50,5 @@ users:
 EOF
 
 fi
+
+unset http_proxy https_proxy proxy
