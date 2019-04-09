@@ -38,6 +38,27 @@ labels:
     node_selector_key: openstack-helm-node-class
     node_selector_value: primary
 
+network_policy:
+  ceph:
+    podSelector:
+      matchLabels:
+        component: utility
+    policyTypes:
+    - Egress
+    - Ingress
+    egress:
+    - ports:
+      - {}
+    - to:
+      - namespaceSelector:
+          matchLabels:
+            name: kube-system
+        podSelector:
+          matchLabels:
+            application: kubernetes
+            component: dns
+
+
 pod:
   dns_policy: "ClusterFirstWithHostNet"
   replicas:
@@ -84,27 +105,31 @@ conf:
     etc: ceph-etc
   cephfilter:
     Filters:
-      # ceph-rootwrap command filters for ceph utility container
-      # This file should be owned by (and only-writeable by) the root user
-      # Below are example command filters. access to ceph cluster can be restricted by creating a user with less privilages
-      ceph: CommandFilter, ceph, root
-      rados: CommandFilter, rados, root
-      radosgw-admin: CommandFilter, radosgw-admin, root
-      rbd: CommandFilter, rbd, root
-      osd-maintenance: CommandFilter, osd-maintenance, root
-      rbd_pv: CommandFilter, rbd_pv, root
-      kubectl: CommandFilter, kubectl, root
-      # Below are examples of RegExpFilter. This will restict access to ceph cluster even with admin user
-      #rbd00: RegExpFilter, rbd, root, rbd, (^((?!clone|copy|cp|create|export|export-diff|flatten|import|import-diff|map|merge-diff|pool|remove|rm|rename|mv|resize|unmap).)*$)
-      #rbd01: RegExpFilter, rbd, root, rbd, image-meta, (^((?!get|remove|set).)*$)
-      #rbd02: RegExpFilter, rbd, root, rbd, journal, (^((?!client|export|import|reset).)*$)
-      #rbd03: RegExpFilter, rbd, root, rbd, lock, (^((?!add|remove).)*$)
-      #rbd04: RegExpFilter, rbd, root, rbd, mirror, image, (^((?!demote|disable|enable|promote).)*$)
-      #rbd05: RegExpFilter, rbd, root, rbd, mirror, pool, (^((?!demote|disable|enable|peer|promote).)*$)
-      #rbd06: RegExpFilter, rbd, root, rbd, nbd, (^((?!map|unmap).)*$)
-      #rbd07: RegExpFilter, rbd, root, rbd, object-map, (^((?!rm|del).)*$)
-      #rbd08: RegExpFilter, rbd, root, rbd, snap, (^((?!create|limit|protect|purge|remove|rm|rename|mv|rollback|revert|unprotect).)*$)
-      #rbd09: RegExpFilter, rbd, root, rbd, trash, (^((?!move|mv|remove|rm|restore).)*$)
+      #RADOS Commands 
+      rados01: RegExpFilter, rados, root, rados, \b(?=lspools|df)\b\S+
+      rados02: RegExpFilter, rados, root, rados, --pool, .*, ls
+      rados03: RegExpFilter, rados, root, rados, --help
+      rados06: RegExpFilter, rados, root, rados, --pool, .*, lssnap
+      rados11: RegExpFilter, rados, root, rados, --pool, .*, get, .*
+      rados12: RegExpFilter, rados, root, rados, --pool, .*, listxattr, .*
+      rados13: RegExpFilter, rados, root, rados, --pool, .*, getxattr, .*, .*
+      rados14: RegExpFilter, rados, root, rados, --pool, .*, stat, .*
+      rados15: RegExpFilter, rados, root, rados, --pool, .*, stat2, .*
+      rados16: RegExpFilter, rados, root, rados, --pool, .*, listomapkeys, .*
+      rados17: RegExpFilter, rados, root, rados, --pool, .*, listomapvals, .*
+      rados18: RegExpFilter, rados, root, rados, --pool, .*, getomapval, .*, .*
+      rados19: RegExpFilter, rados, root, rados, --pool, .*, listwatchers, .*
+      rados20: RegExpFilter, rados, root, rados, --pool, .*, getomapheader, .*
+      rados21: RegExpFilter, rados, root, rados, \b(?=list-inconsistent-pg|list-inconsistent-obj|list-inconsistent-snapset)\b\S+
+      rados22: RegExpFilter, rados, root, rados, list-inconsistent-pg, .*, --format=json-pretty
+      rados23: RegExpFilter, rados, root, rados, list-inconsistent-obj, .*
+      rados24: RegExpFilter, rados, root, rados, list-inconsistent-snapset, .*, --format=json-pretty
+      rados25: RegExpFilter, rados, root, rados, \b(?=clonedata|bench|cleanup)\b\S+
+      rados26: RegExpFilter, rados, root, rados, --pool, .*, clonedata, .*, .*, –object-locator, .*
+      rados27: RegExpFilter, rados, root, rados, --pool, .*, bench, .*, \b(?=write|seq|rand)\b\S+, -b, .*, -t, .*, --run-name, .*
+      rados28: RegExpFilter, rados, root, rados, --pool, .*, cleanup
+      #help menu
+      help: CommandFilter, help, root
   cephrootwrap:
     DEFAULT:
       # Configuration for ceph-rootwrap
@@ -182,3 +207,4 @@ manifests:
   configmap_etc_client: true
   configmap_etc_sudoers: true
   deployment_utility: true
+  network_policy: false
