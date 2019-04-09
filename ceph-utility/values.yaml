@@ -88,7 +88,7 @@ conf:
       # This file should be owned by (and only-writeable by) the root user
       # Below are example command filters. access to ceph cluster can be restricted by creating a user with less privilages
       ceph: CommandFilter, ceph, root
-      rados: CommandFilter, rados, root
+      #rados: CommandFilter, rados, root
       radosgw-admin: CommandFilter, radosgw-admin, root
       rbd: CommandFilter, rbd, root
       osd-maintenance: CommandFilter, osd-maintenance, root
@@ -105,6 +105,7 @@ conf:
       #rbd07: RegExpFilter, rbd, root, rbd, object-map, (^((?!rm|del).)*$)
       #rbd08: RegExpFilter, rbd, root, rbd, snap, (^((?!create|limit|protect|purge|remove|rm|rename|mv|rollback|revert|unprotect).)*$)
       #rbd09: RegExpFilter, rbd, root, rbd, trash, (^((?!move|mv|remove|rm|restore).)*$)
+      rados01: RegExpFilter, rados, root, rados (^((?=lspools|df|ls).)*$)
   cephrootwrap:
     DEFAULT:
       # Configuration for ceph-rootwrap
