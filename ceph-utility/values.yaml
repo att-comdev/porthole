@@ -87,13 +87,14 @@ conf:
       # ceph-rootwrap command filters for ceph utility container
       # This file should be owned by (and only-writeable by) the root user
       # Below are example command filters. access to ceph cluster can be restricted by creating a user with less privilages
-      ceph: CommandFilter, ceph, root
-      rados: CommandFilter, rados, root
-      radosgw-admin: CommandFilter, radosgw-admin, root
-      rbd: CommandFilter, rbd, root
+      ceph00: CommandFilter, ceph, root
+      rados00: CommandFilter, rados, root
+      rgwadm00: CommandFilter, radosgw-admin, root
+      rbd00: CommandFilter, rbd, root
       osd-maintenance: CommandFilter, osd-maintenance, root
       rbd_pv: CommandFilter, rbd_pv, root
       kubectl: CommandFilter, kubectl, root
+      help: CommandFilter, help, root
       # Below are examples of RegExpFilter. This will restict access to ceph cluster even with admin user
       #rbd00: RegExpFilter, rbd, root, rbd, (^((?!clone|copy|cp|create|export|export-diff|flatten|import|import-diff|map|merge-diff|pool|remove|rm|rename|mv|resize|unmap).)*$)
       #rbd01: RegExpFilter, rbd, root, rbd, image-meta, (^((?!get|remove|set).)*$)
