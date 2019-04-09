@@ -84,15 +84,66 @@ conf:
     etc: ceph-etc
   cephfilter:
     Filters:
-      # ceph-rootwrap command filters for ceph utility container
-      # This file should be owned by (and only-writeable by) the root user
-      # Below are example command filters. access to ceph cluster can be restricted by creating a user with less privilages
-      ceph: CommandFilter, ceph, root
-      rados: CommandFilter, rados, root
-      radosgw-admin: CommandFilter, radosgw-admin, root
-      rbd: CommandFilter, rbd, root
+      #RADOS Commands 
+      rados00: RegExpFilter, rados, root, rados, --help
+      rados01: RegExpFilter, rados, root, rados, df
+      rados02: RegExpFilter, rados, root, rados, --pool, .*, ls
+      rados03: RegExpFilter, rados, root, rados, lspools
+      rados06: RegExpFilter, rados, root, rados, --pool, .*, lssnap
+      rados11: RegExpFilter, rados, root, rados, --pool, .*, get, .*
+      rados12: RegExpFilter, rados, root, rados, --pool, .*, listxattr, .*
+      rados13: RegExpFilter, rados, root, rados, --pool, .*, getxattr, .*, .*
+      rados14: RegExpFilter, rados, root, rados, --pool, .*, stat, .*
+      rados15: RegExpFilter, rados, root, rados, --pool, .*, stat2, .*
+      rados16: RegExpFilter, rados, root, rados, --pool, .*, listomapkeys, .*
+      rados17: RegExpFilter, rados, root, rados, --pool, .*, listomapvals, .*
+      rados18: RegExpFilter, rados, root, rados, --pool, .*, getomapval, .*, .*
+      rados19: RegExpFilter, rados, root, rados, --pool, .*, listwatchers, .*
+      rados20: RegExpFilter, rados, root, rados, --pool, .*, getomapheader, .*
+      rados21: RegExpFilter, rados, root, rados, list-inconsistent-pg, .*, --format=json-pretty
+      rados22: RegExpFilter, rados, root, rados, list-inconsistent-obj, .*
+      rados23: RegExpFilter, rados, root, rados, list-inconsistent-snapset, .*, --format=json-pretty
+      #help menu
+      help: CommandFilter, help, root
+      #osd-maintenance
       osd-maintenance: CommandFilter, osd-maintenance, root
+      #rbd_pv
       rbd_pv: CommandFilter, rbd_pv, root
+      #radosge-admin commands
+      rgwadm00: RegExpFilter, radosgw-admin, root, radosgw-admin, --help
+      rgwadm01: RegExpFilter, radosgw-admin, root, radosgw-admin, user, list
+      rgwadm02: RegExpFilter, radosgw-admin, root, radosgw-admin, user, info, --uid=<id>
+      rgwadm03: RegExpFilter, radosgw-admin, root, radosgw-admin, user, stats, --uid=<id>
+      rgwadm04: RegExpFilter, radosgw-admin, root, radosgw-admin, bucket, stats, --bucket=<bucket>
+      rgwadm05: RegExpFilter, radosgw-admin, root, radosgw-admin, bucket, limit, check, --bucket=<bucket>
+      rgwadm06: RegExpFilter, radosgw-admin, root, radosgw-admin, bucket, list
+      #rbd commands
+      rbd00: RegExpFilter, rbd, root, rbd, ls, -l
+      rbd01: RegExpFilter, rbd, root, rbd, ls, -l, .*
+      rbd02: RegExpFilter, rbd, root, rbd, --image, .*, info
+      rbd03: RegExpFilter, rbd, root, rbd, snap, ls, .*
+      rbd04: RegExpFilter, rbd, root, rbd, --pool, .*, snap, ls, (.*)
+      rbd05: RegExpFilter, rbd, root, rbd, device, ls
+      rbd06: RegExpFilter, rbd, root, rbd, help
+      #ceph commands
+      ceph00: RegExpFilter, ceph, root, ceph, --help
+      ceph01: RegExpFilter, ceph, root, ceph, health
+      ceph02: RegExpFilter, ceph, root, ceph, quorum_status
+      ceph03: RegExpFilter, ceph, root, ceph, mon_status
+      ceph04: RegExpFilter, ceph, root, ceph, status
+      ceph05: RegExpFilter, ceph, root, ceph, df
+      ceph06: RegExpFilter, ceph, root, ceph, df, --format, json-pretty
+      ceph07: RegExpFilter, ceph, root, ceph, fsid
+      ceph08: RegExpFilter, ceph, root, ceph, --watch
+      ceph09: RegExpFilter, ceph, root, ceph, mon, dump
+      ceph10: RegExpFilter, ceph, root, ceph, auth, list
+      ceph11: RegExpFilter, ceph, root, ceph, osd, stat
+      ceph12: RegExpFilter, ceph, root, ceph, osd, dump
+      ceph13: RegExpFilter, ceph, root, ceph, osd, tree
+      ceph14: RegExpFilter, ceph, root, ceph, osd, tree, -f, json-pretty
+      ceph15: RegExpFilter, ceph, root, ceph, pg, dump
+      ceph16: RegExpFilter, ceph, root, ceph, osd, purge, .*, --yes-i-really-mean-it
+      ceph17: RegExpFilter, ceph, root, ceph, osd, crush, reweight, .*, .*
       kubectl: CommandFilter, kubectl, root
       # Below are examples of RegExpFilter. This will restict access to ceph cluster even with admin user
       #rbd00: RegExpFilter, rbd, root, rbd, (^((?!clone|copy|cp|create|export|export-diff|flatten|import|import-diff|map|merge-diff|pool|remove|rm|rename|mv|resize|unmap).)*$)
