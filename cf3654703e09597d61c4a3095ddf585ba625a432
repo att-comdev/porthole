@@ -16,6 +16,24 @@
       "revId": "cf3654703e09597d61c4a3095ddf585ba625a432",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ab72c94d_c8bdc7a1",
+        "filename": "ceph-utility/templates/bin/utility/_ceph-utility-rootwrap.tpl",
+        "patchSetId": 5
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1014901
+      },
+      "writtenOn": "2019-04-10T15:28:02Z",
+      "side": 1,
+      "message": "Pete, we want to disable user logging mechanism for C1 sites\nand enable it for rest [ C2, C3 and Prod sites ].Since we have c1/c2/c3/prod parameters in downstream [ site manifests], we are disabling it. in python code we are adding function to map user logging in downstream",
+      "parentUuid": "b8c8adbe_9307b267",
+      "revId": "cf3654703e09597d61c4a3095ddf585ba625a432",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
