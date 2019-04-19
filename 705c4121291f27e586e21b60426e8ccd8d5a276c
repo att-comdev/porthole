@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "39cddf6e_bf4f3bf4",
+        "filename": "openstack-utility/templates/bin/_nccli-sudo.tpl",
+        "patchSetId": 33
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1012096
+      },
+      "writtenOn": "2019-04-19T21:45:32Z",
+      "side": 1,
+      "message": "I may just not be familiar with this convention, but, is this a sudoers file or a shell script?  It\u0027s in the bin directory and has a #!/bin/bash, but it has the body of a sudoers config file and is in the etc configmap.  Is that intentional?",
+      "revId": "705c4121291f27e586e21b60426e8ccd8d5a276c",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
