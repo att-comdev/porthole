@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "94fa7763_3d83f082",
+        "filename": "jmphost/setup-access.sh",
+        "patchSetId": 7
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-04-24T14:25:49Z",
+      "side": 1,
+      "message": "I think this step is not necessary. users who run this script might not have sudo access to install packages. it will be better to have a check if kubectl is present or not, if not it should inform the user to get it installed with admins help",
+      "range": {
+        "startLine": 9,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 26
+      },
+      "revId": "d9779dbc767dd4d5e595646d34ea741084bb30bc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
