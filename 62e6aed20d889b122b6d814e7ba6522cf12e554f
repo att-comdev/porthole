@@ -55,6 +55,24 @@
     },
     {
       "key": {
+        "uuid": "1bc761c4_a1cec8d5",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile",
+        "patchSetId": 37
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1016229
+      },
+      "writtenOn": "2019-04-29T19:14:13Z",
+      "side": 1,
+      "message": "Nevermind I\u0027m sorry, I confused myself between RUN command and ENTRYPOINT command....",
+      "parentUuid": "3c3a17b0_954b1f1f",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6d203933_c555e9cf",
         "filename": "Dockerfiles/openstack-utility/Dockerfile",
         "patchSetId": 37
@@ -66,6 +84,24 @@
       "writtenOn": "2019-04-29T14:53:49Z",
       "side": 1,
       "message": "leave this here",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2a9f06bd_c387200d",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile",
+        "patchSetId": 37
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1016229
+      },
+      "writtenOn": "2019-04-29T19:14:13Z",
+      "side": 1,
+      "message": "Nevermind I\u0027m sorry, I confused myself between RUN command and ENTRYPOINT command....",
+      "parentUuid": "6d203933_c555e9cf",
       "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
@@ -119,6 +155,24 @@
       "side": 1,
       "message": "Installing packages at runtime inside of a container isn\u0027t going to work in ANY production env. This HAS to get moved to a container makefile or possibly into a loci dependency.",
       "parentUuid": "ba624927_e10bb208",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2bc5d976_5296459b",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile",
+        "patchSetId": 37
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1016229
+      },
+      "writtenOn": "2019-04-29T19:14:13Z",
+      "side": 1,
+      "message": "Nevermind I\u0027m sorry, I confused myself between RUN command and ENTRYPOINT command....",
+      "parentUuid": "2514eb8c_8efa14ef",
       "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
