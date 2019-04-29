@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "d0a4e913_608dc429",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile",
+        "patchSetId": 37
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-04-29T16:48:20Z",
+      "side": 1,
+      "message": "Since we are using same make file for all utility containers. I have kept it in docker file",
+      "parentUuid": "35f6c74b_92240eb9",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6d203933_c555e9cf",
         "filename": "Dockerfiles/openstack-utility/Dockerfile",
         "patchSetId": 37
@@ -47,6 +65,24 @@
       "writtenOn": "2019-04-29T14:53:49Z",
       "side": 1,
       "message": "this itself should be an exec command to run whatever entrypoint.sh script you have for your utility container.",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ba624927_e10bb208",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile",
+        "patchSetId": 37
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-04-29T16:48:20Z",
+      "side": 1,
+      "message": "Since we are using same Makefile for all utility containers. I have kept it in docker file",
+      "parentUuid": "9f77db2b_ed9a188b",
       "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
