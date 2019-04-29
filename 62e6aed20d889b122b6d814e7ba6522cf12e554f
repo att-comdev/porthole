@@ -73,6 +73,24 @@
     },
     {
       "key": {
+        "uuid": "95811d39_6851478e",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile",
+        "patchSetId": 37
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-04-29T19:23:36Z",
+      "side": 1,
+      "message": "Sure no problem. In that case can you please remove -1 and provide good review",
+      "parentUuid": "1bc761c4_a1cec8d5",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6d203933_c555e9cf",
         "filename": "Dockerfiles/openstack-utility/Dockerfile",
         "patchSetId": 37
