@@ -232,6 +232,24 @@
     },
     {
       "key": {
+        "uuid": "2880ae50_6a5fc8d2",
+        "filename": "openstack-utility/templates/bin/_bootstrap.sh.tpl",
+        "patchSetId": 37
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-04-29T22:42:00Z",
+      "side": 1,
+      "message": "We have defined in deployment utulity file so it is used when deploying",
+      "parentUuid": "057484fd_5d083e14",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "33950b90_8d1e676a",
         "filename": "openstack-utility/templates/bin/_bootstrap.sh.tpl",
         "patchSetId": 37
@@ -243,6 +261,24 @@
       "writtenOn": "2019-04-29T16:51:57Z",
       "side": 1,
       "message": "the start command as well as rootwrap shouldn\u0027t dump to syslog, they should dump to stdout so the log itself can be collected by Fluentd",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9912372f_d9238d9e",
+        "filename": "openstack-utility/templates/bin/_bootstrap.sh.tpl",
+        "patchSetId": 37
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-04-29T22:42:00Z",
+      "side": 1,
+      "message": "We have another US for logging and log files, Luna is working on that US",
+      "parentUuid": "33950b90_8d1e676a",
       "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
@@ -266,6 +302,24 @@
     },
     {
       "key": {
+        "uuid": "8d64f954_f7ce62db",
+        "filename": "openstack-utility/templates/configmap-etc-client.yaml",
+        "patchSetId": 37
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-04-29T22:42:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "6341421b_9a558b7d",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "34ff713b_76f2e7ba",
         "filename": "openstack-utility/templates/configmap-etc-client.yaml",
         "patchSetId": 37
@@ -277,6 +331,24 @@
       "writtenOn": "2019-04-29T16:51:57Z",
       "side": 1,
       "message": "remove this space please",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "58939f86_b9634c58",
+        "filename": "openstack-utility/templates/configmap-etc-client.yaml",
+        "patchSetId": 37
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-04-29T22:42:00Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "34ff713b_76f2e7ba",
       "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
@@ -300,6 +372,24 @@
     },
     {
       "key": {
+        "uuid": "ba994692_fdec7ddf",
+        "filename": "openstack-utility/templates/deployment-utility.yaml",
+        "patchSetId": 37
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-04-29T22:42:00Z",
+      "side": 1,
+      "message": "Yes mounts are same but files are different. It works with different files and same mounts",
+      "parentUuid": "efca4a73_c431791a",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "fab23cfe_86898bf8",
         "filename": "openstack-utility/templates/deployment-utility.yaml",
         "patchSetId": 37
@@ -317,6 +407,24 @@
     },
     {
       "key": {
+        "uuid": "84f1c0ee_4dbdf3b6",
+        "filename": "openstack-utility/templates/deployment-utility.yaml",
+        "patchSetId": 37
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-04-29T22:42:00Z",
+      "side": 1,
+      "message": "Yes mounts are same but files are different. It works with different files and same mounts",
+      "parentUuid": "fab23cfe_86898bf8",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "9f0bb299_35967bfa",
         "filename": "openstack-utility/templates/deployment-utility.yaml",
         "patchSetId": 37
@@ -328,6 +436,24 @@
       "writtenOn": "2019-04-29T16:51:57Z",
       "side": 1,
       "message": "all three of these mounts have the same name.... this can\u0027t be running code... please fix",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4f940463_a9f9f58e",
+        "filename": "openstack-utility/templates/deployment-utility.yaml",
+        "patchSetId": 37
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-04-29T22:42:00Z",
+      "side": 1,
+      "message": "Yes mounts are same but files are different. It works with different files and same mounts",
+      "parentUuid": "9f0bb299_35967bfa",
       "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
