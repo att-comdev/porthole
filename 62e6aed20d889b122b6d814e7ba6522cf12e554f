@@ -37,6 +37,24 @@
     },
     {
       "key": {
+        "uuid": "3c3a17b0_954b1f1f",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile",
+        "patchSetId": 37
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1016229
+      },
+      "writtenOn": "2019-04-29T16:51:57Z",
+      "side": 1,
+      "message": "Installing packages at runtime inside of a container isn\u0027t going to work in ANY production env. This HAS to get moved to a container makefile or possibly into a loci dependency.",
+      "parentUuid": "d0a4e913_608dc429",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "6d203933_c555e9cf",
         "filename": "Dockerfiles/openstack-utility/Dockerfile",
         "patchSetId": 37
@@ -83,6 +101,143 @@
       "side": 1,
       "message": "Since we are using same Makefile for all utility containers. I have kept it in docker file",
       "parentUuid": "9f77db2b_ed9a188b",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2514eb8c_8efa14ef",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile",
+        "patchSetId": 37
+      },
+      "lineNbr": 22,
+      "author": {
+        "id": 1016229
+      },
+      "writtenOn": "2019-04-29T16:51:57Z",
+      "side": 1,
+      "message": "Installing packages at runtime inside of a container isn\u0027t going to work in ANY production env. This HAS to get moved to a container makefile or possibly into a loci dependency.",
+      "parentUuid": "ba624927_e10bb208",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "057484fd_5d083e14",
+        "filename": "openstack-utility/templates/bin/_bootstrap.sh.tpl",
+        "patchSetId": 37
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1016229
+      },
+      "writtenOn": "2019-04-29T16:51:57Z",
+      "side": 1,
+      "message": "this should be in the dockerfile itself",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "33950b90_8d1e676a",
+        "filename": "openstack-utility/templates/bin/_bootstrap.sh.tpl",
+        "patchSetId": 37
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1016229
+      },
+      "writtenOn": "2019-04-29T16:51:57Z",
+      "side": 1,
+      "message": "the start command as well as rootwrap shouldn\u0027t dump to syslog, they should dump to stdout so the log itself can be collected by Fluentd",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "6341421b_9a558b7d",
+        "filename": "openstack-utility/templates/configmap-etc-client.yaml",
+        "patchSetId": 37
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1016229
+      },
+      "writtenOn": "2019-04-29T16:51:57Z",
+      "side": 1,
+      "message": "remove this space please",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "34ff713b_76f2e7ba",
+        "filename": "openstack-utility/templates/configmap-etc-client.yaml",
+        "patchSetId": 37
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1016229
+      },
+      "writtenOn": "2019-04-29T16:51:57Z",
+      "side": 1,
+      "message": "remove this space please",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "efca4a73_c431791a",
+        "filename": "openstack-utility/templates/deployment-utility.yaml",
+        "patchSetId": 37
+      },
+      "lineNbr": 53,
+      "author": {
+        "id": 1016229
+      },
+      "writtenOn": "2019-04-29T16:51:57Z",
+      "side": 1,
+      "message": "all three of these mounts have the same name....",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fab23cfe_86898bf8",
+        "filename": "openstack-utility/templates/deployment-utility.yaml",
+        "patchSetId": 37
+      },
+      "lineNbr": 57,
+      "author": {
+        "id": 1016229
+      },
+      "writtenOn": "2019-04-29T16:51:57Z",
+      "side": 1,
+      "message": "all three of these mounts have the same name.... this can\u0027t be running code... please fix",
+      "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9f0bb299_35967bfa",
+        "filename": "openstack-utility/templates/deployment-utility.yaml",
+        "patchSetId": 37
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1016229
+      },
+      "writtenOn": "2019-04-29T16:51:57Z",
+      "side": 1,
+      "message": "all three of these mounts have the same name.... this can\u0027t be running code... please fix",
       "revId": "62e6aed20d889b122b6d814e7ba6522cf12e554f",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
