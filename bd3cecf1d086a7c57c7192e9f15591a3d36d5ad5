@@ -22,6 +22,30 @@
       "revId": "bd3cecf1d086a7c57c7192e9f15591a3d36d5ad5",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "70bba9c6_6c640065",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile",
+        "patchSetId": 40
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-05-10T16:29:30Z",
+      "side": 1,
+      "message": "Since Utility container need to be accessed by user other than root,,nobody user  was added. So that only specific nccli commands would be used by the operator.",
+      "parentUuid": "858c2741_a1ee157f",
+      "range": {
+        "startLine": 7,
+        "startChar": 1,
+        "endLine": 8,
+        "endChar": 77
+      },
+      "revId": "bd3cecf1d086a7c57c7192e9f15591a3d36d5ad5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
