@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "858c2741_a1ee157f",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile",
+        "patchSetId": 40
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-05-10T14:08:48Z",
+      "side": 1,
+      "message": "why is that needed?",
+      "range": {
+        "startLine": 7,
+        "startChar": 1,
+        "endLine": 8,
+        "endChar": 77
+      },
+      "revId": "bd3cecf1d086a7c57c7192e9f15591a3d36d5ad5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
