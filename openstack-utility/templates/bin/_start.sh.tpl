@@ -17,3 +17,10 @@ limitations under the License.
 set -ex
 sed -i 's/$PrivDropToUser syslog/$PrivDropToUser nobody/' /etc/rsyslog.conf
 /etc/init.d/rsyslog start
+sed -i "/rootwrap_logger.setLevel/s/.*/#&/" /usr/lib/python2.7/dist-packages/oslo_rootwrap/wrapper.py
+sed -i "/handler.setFormatter/s/.*/#&/" /usr/lib/python2.7/dist-packages/oslo_rootwrap/wrapper.py
+sed -i "/os.path.basename/s/.*/#&/" /usr/lib/python2.7/dist-packages/oslo_rootwrap/wrapper.py
+sed -i "/rootwrap_logger.addHandler/s/.*/#&/" /usr/lib/python2.7/dist-packages/oslo_rootwrap/wrapper.py
+
+
+
