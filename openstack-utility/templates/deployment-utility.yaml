@@ -49,21 +49,21 @@ spec:
 {{ tuple $envAll $envAll.Values.pod.resources.openstack_utility | include "helm-toolkit.snippets.kubernetes_resources" | indent 10 }}
           env:
             - name: OS_AUTH_URL
-               value: "http://keystone.openstack.svc.cluster.local/v3"
+              value: "http://keystone.openstack.svc.cluster.local/v3"
             - name: OS_USERNAME
-               value: $USER_NAME
+              value: $USER_NAME
             - name: OS_USER_DOMAIN_NAME
-               value: "default"
+              value: "default"
             - name: OS_PASSWORD
-               value: "password"
+              value: "password"
             - name: OS_PROJECT_DOMAIN_NAME
-               value: "default"
+              value: "default"
             - name:  OS_PROJECT_NAME
-               value: "admin"
+              value: "admin"
             - name: OS_REGION_NAME
-               value: "RegionOne"
+              value: "RegionOne"
             - name: OS_IDENTITY_API_VERSION
-               value: "3"
+              value: "3"
           command:
             - /tmp/bootstrap.sh
           volumeMounts:
