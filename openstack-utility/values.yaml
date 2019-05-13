@@ -90,6 +90,10 @@ conf:
       # INFO means log all usage
       # ERROR means only log unsuccessful attempts
       syslog_log_level: INFO
+  utility:
+    # True for development labs, 
+    # False where jump hosts will be integrated
+    dev_env: True
 
 dependencies:
   dynamic:
