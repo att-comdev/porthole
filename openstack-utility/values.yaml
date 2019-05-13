@@ -90,6 +90,13 @@ conf:
       # INFO means log all usage
       # ERROR means only log unsuccessful attempts
       syslog_log_level: INFO
+  keystone_auth:
+    auth_url: http://keystone.openstack.svc.cluster.local/v3
+    auth_version: "3"
+  utility:
+    # True for development labs,
+    # False where jump hosts will be integrated
+    dev_env: True
 
 dependencies:
   dynamic:

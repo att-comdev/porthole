@@ -14,4 +14,4 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 */}}
-script -f -a -q /var/log/syslog -c "sudo /usr/local/bin/openstack-utility-rootwrap /etc/openstack-utility/rootwrap.conf $*"
+script -f -a -q /var/log/syslog -c "sudo -E /usr/local/bin/openstack-utility-rootwrap /etc/openstack-utility/rootwrap.conf $*"
