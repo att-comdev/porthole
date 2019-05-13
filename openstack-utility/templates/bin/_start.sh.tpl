@@ -17,3 +17,6 @@ limitations under the License.
 set -ex
 sed -i 's/$PrivDropToUser syslog/$PrivDropToUser nobody/' /etc/rsyslog.conf
 /etc/init.d/rsyslog start
+sed -i 's#"(%s > %s) Executing#\x27ActualUser=\x27 + os.environ[\x27AUSER\x27] + "(%s > %s) Executing#g' /usr/lib/python2.7/dist-packages/oslo_rootwrap/wrapper.py
+sed -i 's/import logging/import logging\nimport os/g' /usr/lib/python2.7/dist-packages/oslo_rootwrap/cmd.py
+sed -i 's#("Unauthorized command: %s#(\x27ActualUser=\x27 + os.environ[\x27AUSER\x27] + ": Unauthorized command: %s#g' /usr/lib/python2.7/dist-packages/oslo_rootwrap/cmd.py

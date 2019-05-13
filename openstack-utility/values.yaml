@@ -90,6 +90,8 @@ conf:
       # INFO means log all usage
       # ERROR means only log unsuccessful attempts
       syslog_log_level: INFO
+  utility:
+    location_corridor: c1
 
 dependencies:
   dynamic:
