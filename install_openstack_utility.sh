@@ -15,3 +15,4 @@ helm  upgrade --install openstack-utility openstack-utility --namespace=utility
 kubectl get -n utility jobs --show-all
 kubectl get -n utility secrets
 kubectl get -n utility configmaps
+kubectl
