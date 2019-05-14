@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "b48789b0_0f17e797",
+        "filename": "openstack-utility/templates/deployment-utility.yaml",
+        "patchSetId": 41
+      },
+      "lineNbr": 51,
+      "author": {
+        "id": 1016497
+      },
+      "writtenOn": "2019-05-14T17:03:07Z",
+      "side": 1,
+      "message": "the indentation is wrong from L51 to L66.It will fail in helm lint.",
+      "revId": "1da1664e05b7fffc6b23982f2a673c465dd6d9fc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5be696f0_c34c4d27",
         "filename": "openstack-utility/templates/deployment-utility.yaml",
         "patchSetId": 41
