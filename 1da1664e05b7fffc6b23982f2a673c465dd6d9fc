@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5be696f0_c34c4d27",
+        "filename": "openstack-utility/templates/deployment-utility.yaml",
+        "patchSetId": 41
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-14T13:49:32Z",
+      "side": 1,
+      "message": "These values will work only for openstack-helm deployment. can you check and confirm whether this works in AIAB and NC deployments?",
+      "range": {
+        "startLine": 50,
+        "startChar": 0,
+        "endLine": 66,
+        "endChar": 25
+      },
+      "revId": "1da1664e05b7fffc6b23982f2a673c465dd6d9fc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
