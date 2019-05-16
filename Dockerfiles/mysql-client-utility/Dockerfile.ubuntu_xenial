@@ -1,0 +1,29 @@
+ARG MYSQL_VERSION=v1.0.0
+ARG FROM=docker.io/ubuntu:xenial
+MAINTAINER Trung Thai <tt2189@att.com>
+
+FROM ${FROM}
+
+RUN set -xe \
+	&& sed -i '/nobody/d' /etc/passwd \
+	&& echo "nobody:x:65534:65534:nobody:/nonexistent:/bin/bash" >> /etc/passwd ;\
+	apt-get update ;\
+	apt-get dist-upgrade -y ;\
+	apt-get install -y \
+		bash \
+		moreutils \
+		vim \
+		sudo \
+		screen \
+		rsyslog \
+		python-oslo.rootwrap \
+		python3-oslo.rootwrap \
+		mysql-client ;\
+    apt-get clean -y ;\
+	rm -rf \
+		/var/cache/debconf/* \
+		/var/lib/apt/lists/* \
+		/var/log/* \
+		/tmp/* \
+		/var/tmp/*
+CMD ["/bin/bash"]
