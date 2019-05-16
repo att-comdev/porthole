@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bebeead2_7b401bc9",
+        "filename": "openstack-utility/values.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2019-05-16T23:01:27Z",
+      "side": 1,
+      "message": "EOL whitespace",
+      "range": {
+        "startLine": 94,
+        "startChar": 32,
+        "endLine": 94,
+        "endChar": 33
+      },
+      "revId": "7dd49468e97cba174b474aec5d7d1918ff0b5f9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a5eb20fd_e513c82f",
+        "filename": "openstack-utility/values.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 94,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2019-05-16T23:01:27Z",
+      "side": 1,
+      "message": "Set to True",
+      "range": {
+        "startLine": 94,
+        "startChar": 5,
+        "endLine": 94,
+        "endChar": 10
+      },
+      "revId": "7dd49468e97cba174b474aec5d7d1918ff0b5f9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "67bd8f1d_1d684329",
+        "filename": "openstack-utility/values.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2019-05-16T23:01:27Z",
+      "side": 1,
+      "message": "Instead of \"jump host\", we refer to this as the \"build node\" in the deployment instructions. However, either way no one would understand what this meant without referencing the deployment guide. Can you instead rephrase the comment (and perhaps rename the variable again) to something that is directly related to how this is being used in the python code in a more literal sense? In other words, when set to true, it\u0027s doing some extra call to getpass.getuser. Could we describe this parameter in terms of that?",
+      "range": {
+        "startLine": 94,
+        "startChar": 0,
+        "endLine": 95,
+        "endChar": 47
+      },
+      "revId": "7dd49468e97cba174b474aec5d7d1918ff0b5f9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ad53b422_84dc293a",
+        "filename": "openstack-utility/values.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 95,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2019-05-16T23:01:27Z",
+      "side": 1,
+      "message": "Set to False",
+      "range": {
+        "startLine": 95,
+        "startChar": 6,
+        "endLine": 95,
+        "endChar": 12
+      },
+      "revId": "7dd49468e97cba174b474aec5d7d1918ff0b5f9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
