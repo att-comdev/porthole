@@ -1,0 +1,15 @@
+Generic Docker Makefile
+-----------------------
+
+This is a generic make and dockerfile for etcdctl utility container, which
+can be used to create docker images using different etcdctl releases.
+
+Usage:
+
+make IMAGE_TAG=<etcdctl_version>
+
+eg:
+
+1. Create docker image for etcdctl release v1.0.0
+
+  make IMAGE_TAG=v1.0.0

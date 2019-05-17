@@ -1,0 +1,62 @@
+---
+# Copyright 2019, SUSE LINUX GmbH.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+- project:
+    check:
+      jobs:
+        - porthole-build-gate-utils
+    gate:
+      jobs:
+        - porthole-upload-gate-utils
+    promote:
+      jobs:
+        - porthole-promote-gate-utils
+    periodic:
+      jobs:
+        - porthole-build-gate-utils
+
+- job:
+    name: porthole-build-gate-utils
+    parent: porthole-build
+    description: Build gate-utils images
+    vars: &gate-utils_vars
+      docker_images:
+        - context: gate-utils
+          repository: openstackhelm/gate-utils
+          tags:
+            - latest-opensuse_15
+          dockerfile: Dockerfile.suse_15
+        - context: gate-utils
+          repository: openstackhelm/gate-utils
+          dockerfile: Dockerfile.debian
+          tags:
+            - latest-debian
+    files: &gate-utils_files
+      - gate-utils/.*
+      - zuul.d/gate-utils.yaml
+
+- job:
+    name: porthole-upload-gate-utils
+    parent: porthole-upload
+    description: Build and upload gate-utils images
+    vars: *gate-utils_vars
+    files: *gate-utils_files
+
+- job:
+    name: porthole-promote-gate-utils
+    parent: porthole-promote
+    description: Promote a previously published gate-utils image to latest.
+    vars: *gate-utils_vars
+    files: *gate-utils_files
