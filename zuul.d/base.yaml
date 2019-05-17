@@ -1,0 +1,73 @@
+---
+# Copyright 2019, SUSE LINUX GmbH.
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+- project:
+#    templates:
+
+# This takes the same structure as other infra jobs.
+# This dict keyname matter. See also job definition for more explanations.
+#- secret:
+#    name: 
+#    data:
+#      username:
+#        - 
+#      password:
+#        - 
+
+# In docker_images:
+# `context` is the folder in osh-images
+# `repository` is the repo on dockerhub
+# `tags` is a list of the tags when promoted
+#   (images are published with change id)
+# `dockerfile`. Explicit.
+- job:
+    name: porthole-build
+    parent: build-docker-image
+    abstract: true
+    description: |
+      This job is building a docker image for
+      porthole Helm usage.
+      Image specific tests can be added by
+      running a post script on the relevant
+      jobs.
+    irrelevant-files:
+      - ^\.git.*
+      - ^.*\.(example|md|rst)$
+      - ^doc/.*
+      - ^releasenotes/.*
+    timeout: 3600
+
+# The secret is exposed as docker_credentials dict,
+# which is used by upload-docker-image job to pass those vars to the
+# upload role.
+- job:
+    name: porthole-upload
+    parent: upload-docker-image
+    abstract: true
+#    secrets:
+#      name: docker_credentials
+#      secret:
+#      pass-to-parent: true
+    timeout: 3600
+
+- job:
+    name: porthole-promote
+    parent: promote-docker-image
+    abstract: true
+#    secrets:
+#      name: docker_credentials
+#      secret: 
+#      pass-to-parent: true
+    timeout: 3600
