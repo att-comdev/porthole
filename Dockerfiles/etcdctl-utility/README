@@ -1,0 +1,32 @@
+etcdctl utility Container
+-----------------------
+
+Installation
+------------
+1. Install AirShip in a Bottle(AIAB)
+
+sudo -i
+mkdir -p /root/deploy && cd "$_"
+git clone https://git.openstack.org/openstack/airship-in-a-bottle
+cd /root/deploy/airship-in-a-bottle/manifests/dev_single_node
+./airship-in-a-bottle.sh
+
+
+2. Deploy Porthole
+
+git clone https://github.com/att-comdev/porthole.git
+
+cd porthole
+./install_etcdctl_utility.sh
+
+Usage
+-----
+
+Get in to the utility pod using kubectl exec. To perform any operation use the below example. Please be ready with password for accessing below cli commands.
+
+kubectl exec -it <POD_NAME> -n utility /bin/bash
+
+example:
+   nccli etcdctl member list
+   nccli etcdctl endpoint health
+   nccli etcdctl endpoint status
