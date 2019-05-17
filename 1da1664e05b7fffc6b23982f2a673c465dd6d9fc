@@ -2,6 +2,75 @@
   "comments": [
     {
       "key": {
+        "uuid": "522bb5be_a9d3fc72",
+        "filename": "openstack-utility/templates/bin/_bootstrap.sh.tpl",
+        "patchSetId": 41
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1016091
+      },
+      "writtenOn": "2019-05-17T18:29:18Z",
+      "side": 1,
+      "message": "If you\u0027re doing it this way you will need a sidecar for rotating\n/var/log/syslog as otherwise it will be quickly consuming disk-space.\nYou man want to consider alternative approach of running \u0027socat\u0027 as was\ndone in calicoctl-utility container. \nMain thing is that you need to address this somehow. Otherwise if you\nwrite constantly to file that is inside container disk space won\u0027t be freed",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 23
+      },
+      "revId": "1da1664e05b7fffc6b23982f2a673c465dd6d9fc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "680a8f90_ec308736",
+        "filename": "openstack-utility/templates/bin/_nccli-sudo.tpl",
+        "patchSetId": 41
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1016091
+      },
+      "writtenOn": "2019-05-17T18:29:18Z",
+      "side": 1,
+      "message": "you are not providing config for rootwrap. this will lead to user being\nable to use any config file and exec any command",
+      "range": {
+        "startLine": 16,
+        "startChar": 44,
+        "endLine": 16,
+        "endChar": 85
+      },
+      "revId": "1da1664e05b7fffc6b23982f2a673c465dd6d9fc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "184e28d9_483a443a",
+        "filename": "openstack-utility/templates/bin/_start.sh.tpl",
+        "patchSetId": 41
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1016091
+      },
+      "writtenOn": "2019-05-17T18:29:18Z",
+      "side": 1,
+      "message": "Have you checked that syslog works as expected after this?\nI\u0027ve seen some errors with such approach",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 75
+      },
+      "revId": "1da1664e05b7fffc6b23982f2a673c465dd6d9fc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "b48789b0_0f17e797",
         "filename": "openstack-utility/templates/deployment-utility.yaml",
         "patchSetId": 41
