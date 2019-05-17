@@ -2,6 +2,52 @@
   "comments": [
     {
       "key": {
+        "uuid": "fb559dfd_7179a70d",
+        "filename": "openstack-utility/templates/bin/_start.sh.tpl",
+        "patchSetId": 4
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1016091
+      },
+      "writtenOn": "2019-05-17T18:36:43Z",
+      "side": 1,
+      "message": "It is actually good style leaving blank line at the end of bash scripts",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 25
+      },
+      "revId": "7dd49468e97cba174b474aec5d7d1918ff0b5f9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4c5b10c9_9ff8b967",
+        "filename": "openstack-utility/templates/deployment-utility.yaml",
+        "patchSetId": 4
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 1016091
+      },
+      "writtenOn": "2019-05-17T18:36:43Z",
+      "side": 1,
+      "message": "Just out of curiosity: where you\u0027re using this vars?",
+      "range": {
+        "startLine": 51,
+        "startChar": 1,
+        "endLine": 66,
+        "endChar": 24
+      },
+      "revId": "7dd49468e97cba174b474aec5d7d1918ff0b5f9d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "bebeead2_7b401bc9",
         "filename": "openstack-utility/values.yaml",
         "patchSetId": 4
