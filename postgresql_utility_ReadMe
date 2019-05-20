@@ -1,0 +1,61 @@
+Utility Container
+-----------------
+1. Postgresql utility Container
+
+Installation
+------------
+1. Install the latest versions of Git, CA Certs & Make if necessary
+
+#!/bin/bash
+set -xe
+
+sudo apt-get update
+sudo apt-get install --no-install-recommends -y \
+        ca-certificates \
+        git \
+        make \
+        jq \
+        nmap \
+        curl \
+        uuid-runtime
+
+3. Proxy Configuration
+
+In order to deploy OpenStack-Helm behind corporate proxy servers, add the following entries to openstack-helm-infra/tools/gate/devel/local-vars.yaml.
+
+proxy:
+  http: http://username:password@host:port
+  https: https://username:password@host:port
+  noproxy: 127.0.0.1,localhost,172.17.0.1,.svc.cluster.local
+
+Add the address of the Kubernetes API, 172.17.0.1, and .svc.cluster.local to your no_proxy and NO_PROXY environment variables.
+
+export no_proxy=${no_proxy},172.17.0.1,.svc.cluster.local
+export NO_PROXY=${NO_PROXY},172.17.0.1,.svc.cluster.local
+
+4. Install AirShip in a Bottle(AIAB)
+
+sudo -i
+mkdir -p /root/deploy && cd "$_"
+git clone https://git.openstack.org/openstack/airship-in-a-bottle
+cd /root/deploy/airship-in-a-bottle/manifests/dev_single_node
+./airship-in-a-bottle.sh
+
+
+5. Deploy Porthole
+
+git clone https://github.com/att-comdev/porthole.git
+
+git pull "ssh://karthikVaragini@review.gerrithub.io:29418/att-comdev/porthole" refs/changes/72/455072
+
+cd porthole
+./install_postgresql_utility.sh
+
+Usage
+-----
+
+Get in to the utility pod using kubectl exec. To perform any operation on the ucp postgre cluster use the below example.
+
+example:
+    nccli psql -h hostname -U username -d database
+    psql -h hostaddress -U username -p port --password password
