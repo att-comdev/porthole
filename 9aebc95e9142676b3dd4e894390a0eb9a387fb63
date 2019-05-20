@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "7641a395_a10e58fe",
+        "filename": "jmphost/setup-access.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1016303
+      },
+      "writtenOn": "2019-05-20T18:01:44Z",
+      "side": 1,
+      "message": "you are right.  it\u0027s \"config\".  will fix it.",
+      "parentUuid": "5d4d24df_629ed4b9",
+      "range": {
+        "startLine": 21,
+        "startChar": 35,
+        "endLine": 21,
+        "endChar": 39
+      },
+      "revId": "9aebc95e9142676b3dd4e894390a0eb9a387fb63",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "d9c95d78_b91df228",
         "filename": "jmphost/setup-access.sh",
         "patchSetId": 9
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "4f6cafdb_ce601ef3",
+        "filename": "jmphost/setup-access.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1016303
+      },
+      "writtenOn": "2019-05-20T18:01:44Z",
+      "side": 1,
+      "message": "you are right.  it\u0027s 3 \"-\".  will fix it.",
+      "parentUuid": "d9c95d78_b91df228",
+      "range": {
+        "startLine": 30,
+        "startChar": 0,
+        "endLine": 30,
+        "endChar": 2
+      },
+      "revId": "9aebc95e9142676b3dd4e894390a0eb9a387fb63",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b67de02c_e4b1c00b",
         "filename": "jmphost/setup-access.sh",
         "patchSetId": 9
@@ -59,6 +107,30 @@
       "writtenOn": "2019-05-16T16:50:52Z",
       "side": 1,
       "message": "what if the LOGNAME is different from user who is having access to cluster. eg:- in my case i deployed the k8s cluster as \"admin\", then ran this script from my laptop which is having user \"ubuntu\". it downloaded and created the conf file and i renamed it to config but when i do kubectl config view, i am getting the following error \"error: Error loading config file \"/home/ubuntu/.kube/config\": yaml: line 11: mapping values are not allowed in this context\"",
+      "range": {
+        "startLine": 40,
+        "startChar": 10,
+        "endLine": 40,
+        "endChar": 20
+      },
+      "revId": "9aebc95e9142676b3dd4e894390a0eb9a387fb63",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "419edd4c_4dec9158",
+        "filename": "jmphost/setup-access.sh",
+        "patchSetId": 9
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1016303
+      },
+      "writtenOn": "2019-05-20T18:01:44Z",
+      "side": 1,
+      "message": "the design is having user login with their attuid.  this enforces the role.",
+      "parentUuid": "b67de02c_e4b1c00b",
       "range": {
         "startLine": 40,
         "startChar": 10,
