@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f21f2665_cdd5540c",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1016303
+      },
+      "writtenOn": "2019-05-23T17:20:21Z",
+      "side": 1,
+      "message": "please add a little more descriptive the purpose functional of this.",
+      "revId": "1d7626a2cfbb3ab1e169bae9fda31917f5dc45c4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7559c51f_ba035cbf",
+        "filename": "postgresql-utility/values.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1016303
+      },
+      "writtenOn": "2019-05-23T17:20:21Z",
+      "side": 1,
+      "message": "i don\u0027t see this image on docker hub. wondering if the chart has been tested yet first",
+      "revId": "1d7626a2cfbb3ab1e169bae9fda31917f5dc45c4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "06d32650_abfb1ad4",
+        "filename": "postgresql-utility/values.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1016303
+      },
+      "writtenOn": "2019-05-23T17:20:21Z",
+      "side": 1,
+      "message": "should it matter to use version 18.x (latest version) vs 17.x?",
+      "revId": "1d7626a2cfbb3ab1e169bae9fda31917f5dc45c4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
