@@ -120,6 +120,30 @@
     },
     {
       "key": {
+        "uuid": "68c086ef_8ef44a0e",
+        "filename": "openstack-utility/templates/bin/_nccli-sudo.tpl",
+        "patchSetId": 41
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1016091
+      },
+      "writtenOn": "2019-05-24T16:29:03Z",
+      "side": 1,
+      "message": "filters don\u0027t matter if you can execute rootwrap with config that uses\ndifferent filters",
+      "parentUuid": "ed203f16_fc7c3ed0",
+      "range": {
+        "startLine": 16,
+        "startChar": 44,
+        "endLine": 16,
+        "endChar": 85
+      },
+      "revId": "1da1664e05b7fffc6b23982f2a673c465dd6d9fc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "184e28d9_483a443a",
         "filename": "openstack-utility/templates/bin/_start.sh.tpl",
         "patchSetId": 41
