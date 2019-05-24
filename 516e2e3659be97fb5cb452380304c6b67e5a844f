@@ -1,0 +1,239 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "90ea5fc1_1cbad5dd",
+        "filename": "Dockerfiles/postgresql-utility/Dockerfile.ubuntu",
+        "patchSetId": 2
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-24T18:44:52Z",
+      "side": 1,
+      "message": "can you check the release version of postgress?",
+      "range": {
+        "startLine": 4,
+        "startChar": 4,
+        "endLine": 4,
+        "endChar": 28
+      },
+      "revId": "516e2e3659be97fb5cb452380304c6b67e5a844f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4803010b_df1b0a85",
+        "filename": "Dockerfiles/postgresql-utility/Dockerfile.ubuntu",
+        "patchSetId": 2
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-24T18:44:52Z",
+      "side": 1,
+      "message": "Do we need ceph and other packages on postgress docker image?",
+      "revId": "516e2e3659be97fb5cb452380304c6b67e5a844f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fa6b9cdf_bce5a6cb",
+        "filename": "Dockerfiles/postgresql-utility/Dockerfile.ubuntu",
+        "patchSetId": 2
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-24T18:44:52Z",
+      "side": 1,
+      "message": "do we need kubectl and pip on this docker image?",
+      "range": {
+        "startLine": 17,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 64
+      },
+      "revId": "516e2e3659be97fb5cb452380304c6b67e5a844f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "0d10a123_138512ad",
+        "filename": "postgresql-utility/templates/bin/utility/_osd-maintenance.tpl",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-24T18:44:52Z",
+      "side": 1,
+      "message": "why do we need osd maintenance script on postgress utility container?",
+      "revId": "516e2e3659be97fb5cb452380304c6b67e5a844f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "c1772b0a_60514271",
+        "filename": "postgresql-utility/templates/bin/utility/_rbd_pv.tpl",
+        "patchSetId": 2
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-24T18:44:52Z",
+      "side": 1,
+      "message": "why do we need rbd pv script in postgress utility?",
+      "revId": "516e2e3659be97fb5cb452380304c6b67e5a844f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "371df484_a769cc06",
+        "filename": "postgresql-utility/templates/configmap-bin.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-24T18:44:52Z",
+      "side": 1,
+      "message": "do we need this on postgress utility container?",
+      "range": {
+        "startLine": 28,
+        "startChar": 0,
+        "endLine": 34,
+        "endChar": 10
+      },
+      "revId": "516e2e3659be97fb5cb452380304c6b67e5a844f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "4aae8b19_c78ad1b4",
+        "filename": "postgresql-utility/templates/deployment-utility.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 89,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-24T18:44:52Z",
+      "side": 1,
+      "message": "ceph scripts is not needed on postgress utiltiy",
+      "range": {
+        "startLine": 83,
+        "startChar": 0,
+        "endLine": 89,
+        "endChar": 29
+      },
+      "revId": "516e2e3659be97fb5cb452380304c6b67e5a844f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "de806070_28d4724f",
+        "filename": "postgresql-utility/templates/deployment-utility.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 112,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-24T18:44:52Z",
+      "side": 1,
+      "message": "Do we need this? what is the purpose of this mount?",
+      "range": {
+        "startLine": 110,
+        "startChar": 0,
+        "endLine": 112,
+        "endChar": 29
+      },
+      "revId": "516e2e3659be97fb5cb452380304c6b67e5a844f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6a4d7466_6ca41cd5",
+        "filename": "postgresql-utility/templates/deployment-utility.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 138,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-24T18:44:52Z",
+      "side": 1,
+      "message": "Are we planning to do backup from postgress utility container?",
+      "range": {
+        "startLine": 135,
+        "startChar": 0,
+        "endLine": 138,
+        "endChar": 35
+      },
+      "revId": "516e2e3659be97fb5cb452380304c6b67e5a844f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "897afc14_5211763a",
+        "filename": "postgresql-utility/values.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 107,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-24T18:44:52Z",
+      "side": 1,
+      "message": "do we need these in postgresql utility container?",
+      "range": {
+        "startLine": 91,
+        "startChar": 0,
+        "endLine": 107,
+        "endChar": 88
+      },
+      "revId": "516e2e3659be97fb5cb452380304c6b67e5a844f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "7d1f4d51_7dd2cd54",
+        "filename": "postgresql-utility/values.yaml",
+        "patchSetId": 2
+      },
+      "lineNbr": 133,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-24T18:44:52Z",
+      "side": 1,
+      "message": "do we need this?",
+      "range": {
+        "startLine": 131,
+        "startChar": 0,
+        "endLine": 133,
+        "endChar": 62
+      },
+      "revId": "516e2e3659be97fb5cb452380304c6b67e5a844f",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
