@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "12621e04_7962e38a",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 1
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1016512
+      },
+      "writtenOn": "2019-05-24T07:02:34Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "f21f2665_cdd5540c",
+      "revId": "1d7626a2cfbb3ab1e169bae9fda31917f5dc45c4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "7559c51f_ba035cbf",
         "filename": "postgresql-utility/values.yaml",
         "patchSetId": 1
@@ -36,6 +54,24 @@
     },
     {
       "key": {
+        "uuid": "05059905_07c3082f",
+        "filename": "postgresql-utility/values.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1016512
+      },
+      "writtenOn": "2019-05-24T07:02:34Z",
+      "side": 1,
+      "message": "it is present in docker hub, please check the following link \nhttps://cloud.docker.com/u/varaginikarthik/repository/docker/varaginikarthik/postgresql-utility",
+      "parentUuid": "7559c51f_ba035cbf",
+      "revId": "1d7626a2cfbb3ab1e169bae9fda31917f5dc45c4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "06d32650_abfb1ad4",
         "filename": "postgresql-utility/values.yaml",
         "patchSetId": 1
@@ -47,6 +83,24 @@
       "writtenOn": "2019-05-23T17:20:21Z",
       "side": 1,
       "message": "should it matter to use version 18.x (latest version) vs 17.x?",
+      "revId": "1d7626a2cfbb3ab1e169bae9fda31917f5dc45c4",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "a31b20a3_b18eb598",
+        "filename": "postgresql-utility/values.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 29,
+      "author": {
+        "id": 1016512
+      },
+      "writtenOn": "2019-05-24T07:02:34Z",
+      "side": 1,
+      "message": "To get the consistency throughout the repo I have used this version",
+      "parentUuid": "06d32650_abfb1ad4",
       "revId": "1d7626a2cfbb3ab1e169bae9fda31917f5dc45c4",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
