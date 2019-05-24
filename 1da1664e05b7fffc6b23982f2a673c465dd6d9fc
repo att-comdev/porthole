@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "ac7e20a4_6ed6b768",
+        "filename": "openstack-utility/templates/bin/_bootstrap.sh.tpl",
+        "patchSetId": 41
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-05-24T15:26:59Z",
+      "side": 1,
+      "message": "we are using log rotation at host level.",
+      "parentUuid": "522bb5be_a9d3fc72",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 23
+      },
+      "revId": "1da1664e05b7fffc6b23982f2a673c465dd6d9fc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "680a8f90_ec308736",
         "filename": "openstack-utility/templates/bin/_nccli-sudo.tpl",
         "patchSetId": 41
@@ -48,6 +72,30 @@
     },
     {
       "key": {
+        "uuid": "ed203f16_fc7c3ed0",
+        "filename": "openstack-utility/templates/bin/_nccli-sudo.tpl",
+        "patchSetId": 41
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-05-24T15:26:59Z",
+      "side": 1,
+      "message": "I had provided filters in values.yaml and that will take care of it",
+      "parentUuid": "680a8f90_ec308736",
+      "range": {
+        "startLine": 16,
+        "startChar": 44,
+        "endLine": 16,
+        "endChar": 85
+      },
+      "revId": "1da1664e05b7fffc6b23982f2a673c465dd6d9fc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "184e28d9_483a443a",
         "filename": "openstack-utility/templates/bin/_start.sh.tpl",
         "patchSetId": 41
@@ -59,6 +107,30 @@
       "writtenOn": "2019-05-17T18:29:18Z",
       "side": 1,
       "message": "Have you checked that syslog works as expected after this?\nI\u0027ve seen some errors with such approach",
+      "range": {
+        "startLine": 18,
+        "startChar": 0,
+        "endLine": 18,
+        "endChar": 75
+      },
+      "revId": "1da1664e05b7fffc6b23982f2a673c465dd6d9fc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "19177e12_f076a5d6",
+        "filename": "openstack-utility/templates/bin/_start.sh.tpl",
+        "patchSetId": 41
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-05-24T15:26:59Z",
+      "side": 1,
+      "message": "Yes it\u0027s working as expected and needed.",
+      "parentUuid": "184e28d9_483a443a",
       "range": {
         "startLine": 18,
         "startChar": 0,
