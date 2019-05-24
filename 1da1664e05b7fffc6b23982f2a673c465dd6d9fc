@@ -49,6 +49,30 @@
     },
     {
       "key": {
+        "uuid": "a833c149_294c6089",
+        "filename": "openstack-utility/templates/bin/_bootstrap.sh.tpl",
+        "patchSetId": 41
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1016091
+      },
+      "writtenOn": "2019-05-24T16:26:35Z",
+      "side": 1,
+      "message": "/var/log/syslog inside container is different from the one on the host \nand will not be rotated. Logs that are written to containers stdout will be, \nbut /var/log/syslog won\u0027t",
+      "parentUuid": "ac7e20a4_6ed6b768",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 23
+      },
+      "revId": "1da1664e05b7fffc6b23982f2a673c465dd6d9fc",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "680a8f90_ec308736",
         "filename": "openstack-utility/templates/bin/_nccli-sudo.tpl",
         "patchSetId": 41
