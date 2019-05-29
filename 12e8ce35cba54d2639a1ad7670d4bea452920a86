@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "0b2fee2b_15cc1690",
+        "filename": "jmphost/setup-access.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-29T16:03:04Z",
+      "side": 1,
+      "message": "Can you change this so SITE_NAME and all other places",
+      "range": {
+        "startLine": 70,
+        "startChar": 12,
+        "endLine": 70,
+        "endChar": 19
+      },
+      "revId": "12e8ce35cba54d2639a1ad7670d4bea452920a86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8d15ab9f_cd93f32e",
+        "filename": "jmphost/setup-access.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-29T16:03:04Z",
+      "side": 1,
+      "message": "This should be generic",
+      "range": {
+        "startLine": 97,
+        "startChar": 18,
+        "endLine": 97,
+        "endChar": 72
+      },
+      "revId": "12e8ce35cba54d2639a1ad7670d4bea452920a86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "be27f0ca_24ceaa2f",
+        "filename": "jmphost/setup-access.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 103,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-29T16:03:04Z",
+      "side": 1,
+      "message": "this should be generic",
+      "range": {
+        "startLine": 103,
+        "startChar": 26,
+        "endLine": 103,
+        "endChar": 67
+      },
+      "revId": "12e8ce35cba54d2639a1ad7670d4bea452920a86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
