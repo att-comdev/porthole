@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b24f5a63_d0f10d31",
+        "filename": "openstack-utility/templates/bin/utility/_openstack-utility-rootwrap.tpl",
+        "patchSetId": 5
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-05-31T13:43:24Z",
+      "side": 1,
+      "message": "i think this whitespace will make this code unusable. can you check and confirm?",
+      "range": {
+        "startLine": 44,
+        "startChar": 82,
+        "endLine": 44,
+        "endChar": 83
+      },
+      "revId": "c33840068ef0d085e9770aae73f645c587ddf5c8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
