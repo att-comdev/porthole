@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "5c76d389_7b71ab9f",
+        "filename": "jmphost/setup-access.sh",
+        "patchSetId": 10
+      },
+      "lineNbr": 70,
+      "author": {
+        "id": 1016303
+      },
+      "writtenOn": "2019-06-03T15:58:18Z",
+      "side": 1,
+      "message": "I agree SITE_NAME is more appropriate though we deviate from the design specification doc.  it make senses. okay.  I will make it generic across the script with the next commit.",
+      "parentUuid": "0b2fee2b_15cc1690",
+      "range": {
+        "startLine": 70,
+        "startChar": 12,
+        "endLine": 70,
+        "endChar": 19
+      },
+      "revId": "12e8ce35cba54d2639a1ad7670d4bea452920a86",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8d15ab9f_cd93f32e",
         "filename": "jmphost/setup-access.sh",
         "patchSetId": 10
