@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "28478054_f6c4edd8",
+        "filename": "jmphost/setup-access.sh",
+        "patchSetId": 11
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1016303
+      },
+      "writtenOn": "2019-06-11T18:59:41Z",
+      "side": 1,
+      "message": "retest",
+      "revId": "ffa9a044850e1d4079cbca1432e3b518ab54ed8e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
