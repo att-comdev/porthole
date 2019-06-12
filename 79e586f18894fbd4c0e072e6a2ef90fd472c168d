@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cb64dfe2_97a7aa71",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 11
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1012474
+      },
+      "writtenOn": "2019-06-12T14:45:46Z",
+      "side": 1,
+      "message": "Could we make this explain this in a more vague way?  As this is a public facing repository, the concepts of Corridors and such don\u0027t necessarily make sense.  It\u0027d be great if we could be more verbose in explaining this functionality in a generic way",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 49
+      },
+      "revId": "79e586f18894fbd4c0e072e6a2ef90fd472c168d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "dcef7df0_6710ef53",
+        "filename": "ceph-utility/templates/bin/utility/_ceph-utility-rootwrap.tpl",
+        "patchSetId": 11
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1012474
+      },
+      "writtenOn": "2019-06-12T14:45:46Z",
+      "side": 1,
+      "message": "I feel like this could be a more generic check for enabling this or not, instead of checking for an arbitrary concept like a corridor",
+      "range": {
+        "startLine": 27,
+        "startChar": 35,
+        "endLine": 27,
+        "endChar": 90
+      },
+      "revId": "79e586f18894fbd4c0e072e6a2ef90fd472c168d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "cc68019b_401fcb71",
+        "filename": "ceph-utility/values.yaml",
+        "patchSetId": 11
+      },
+      "lineNbr": 84,
+      "author": {
+        "id": 1012474
+      },
+      "writtenOn": "2019-06-12T14:45:46Z",
+      "side": 1,
+      "message": "See comments wrt corridors",
+      "range": {
+        "startLine": 83,
+        "startChar": 0,
+        "endLine": 84,
+        "endChar": 25
+      },
+      "revId": "79e586f18894fbd4c0e072e6a2ef90fd472c168d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
