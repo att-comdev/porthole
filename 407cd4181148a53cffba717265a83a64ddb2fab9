@@ -1,0 +1,142 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "689a1149_a005ffa4",
+        "filename": "ceph-utility/templates/bin/utility/_help.tpl",
+        "patchSetId": 13
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1012474
+      },
+      "writtenOn": "2019-06-12T14:58:11Z",
+      "side": 1,
+      "message": "2019",
+      "range": {
+        "startLine": 3,
+        "startChar": 10,
+        "endLine": 3,
+        "endChar": 14
+      },
+      "revId": "407cd4181148a53cffba717265a83a64ddb2fab9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "418b8d1c_fe94f4bd",
+        "filename": "ceph-utility/templates/bin/utility/_osd-maintenance.tpl",
+        "patchSetId": 13
+      },
+      "lineNbr": 21,
+      "author": {
+        "id": 1012474
+      },
+      "writtenOn": "2019-06-12T14:58:11Z",
+      "side": 1,
+      "message": "does this need spaces on either side of the comparison operator?  we should be consistent with either no spaces or spaces (see .status \u003d\u003d \"down\")",
+      "range": {
+        "startLine": 21,
+        "startChar": 67,
+        "endLine": 21,
+        "endChar": 69
+      },
+      "revId": "407cd4181148a53cffba717265a83a64ddb2fab9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "de30a2cc_12ded51c",
+        "filename": "ceph-utility/templates/bin/utility/_osd-maintenance.tpl",
+        "patchSetId": 13
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1012474
+      },
+      "writtenOn": "2019-06-12T14:58:11Z",
+      "side": 1,
+      "message": "can we make this a strict check?  I feel with this behavior, there should be one acceptable input instead of checking all variations of \u0027yes\u0027 or \u0027y\u0027.  With great power comes great responsibility",
+      "range": {
+        "startLine": 36,
+        "startChar": 3,
+        "endLine": 36,
+        "endChar": 74
+      },
+      "revId": "407cd4181148a53cffba717265a83a64ddb2fab9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6aef1ada_0bfb80c8",
+        "filename": "ceph-utility/templates/bin/utility/_osd-maintenance.tpl",
+        "patchSetId": 13
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1012474
+      },
+      "writtenOn": "2019-06-12T14:58:11Z",
+      "side": 1,
+      "message": "Same here",
+      "range": {
+        "startLine": 40,
+        "startChar": 3,
+        "endLine": 40,
+        "endChar": 74
+      },
+      "revId": "407cd4181148a53cffba717265a83a64ddb2fab9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "6b52607a_c607aa52",
+        "filename": "ceph-utility/templates/bin/utility/_osd-maintenance.tpl",
+        "patchSetId": 13
+      },
+      "lineNbr": 50,
+      "author": {
+        "id": 1012474
+      },
+      "writtenOn": "2019-06-12T14:58:11Z",
+      "side": 1,
+      "message": "See spacing comment above",
+      "range": {
+        "startLine": 50,
+        "startChar": 75,
+        "endLine": 50,
+        "endChar": 78
+      },
+      "revId": "407cd4181148a53cffba717265a83a64ddb2fab9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "fe258152_5d618506",
+        "filename": "ceph-utility/templates/bin/utility/_osd-maintenance.tpl",
+        "patchSetId": 13
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 1012474
+      },
+      "writtenOn": "2019-06-12T14:58:11Z",
+      "side": 1,
+      "message": "This function should be renamed to be more clear about its behavior.  This sounds like it just removes an osd by ID, but it\u0027s really only removing osds in a down state.  This should be made more clear",
+      "range": {
+        "startLine": 48,
+        "startChar": 0,
+        "endLine": 61,
+        "endChar": 1
+      },
+      "revId": "407cd4181148a53cffba717265a83a64ddb2fab9",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
