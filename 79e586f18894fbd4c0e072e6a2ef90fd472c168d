@@ -48,6 +48,30 @@
     },
     {
       "key": {
+        "uuid": "2fde86bf_d00f58f5",
+        "filename": "ceph-utility/templates/bin/utility/_ceph-utility-rootwrap.tpl",
+        "patchSetId": 11
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1014901
+      },
+      "writtenOn": "2019-06-12T15:26:36Z",
+      "side": 1,
+      "message": "I tried different ways to avoid exposure of corridor variable, but was not successful. I have mentioned this to design team. Same was demoed to architects",
+      "parentUuid": "dcef7df0_6710ef53",
+      "range": {
+        "startLine": 27,
+        "startChar": 35,
+        "endLine": 27,
+        "endChar": 90
+      },
+      "revId": "79e586f18894fbd4c0e072e6a2ef90fd472c168d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "cc68019b_401fcb71",
         "filename": "ceph-utility/values.yaml",
         "patchSetId": 11
