@@ -66,7 +66,33 @@ conf:
     Filters:
       # openstack-rootwrap command filters for openstack utility container
       # This file should be owned by (and only-writeable by) the root user
-      openstack: CommandFilter, openstack, root
+      # openstack: CommandFilter, openstack, root
+      help: CommandFilter, help, root
+      # openstack compute service regex filters
+      openstack_compute_service_list_01: RegExpFilter, openstack, root, openstack, compute, service, (^((?!delete|set).)*$)
+      openstack_compute_service_list_02: RegExpFilter, openstack, root, openstack, compute, service, (^((?!delete|set).)*$), --service|--host, .*
+      openstack_compute_service_list_03: RegExpFilter, openstack, root, openstack, compute, service, (^((?!delete|set).)*$), --service|--host, .*, --long
+      openstack_compute_service_list_04: RegExpFilter, openstack, root, openstack, compute, service, (^((?!delete|set).)*$), --host, .*, --service, .*, --long
+      # openstack ip availability list regex filters
+      openstack_ip_availability_list_01: RegExpFilter, openstack, root, openstack, ip, availability, list
+      openstack_ip_availability_list_02: RegExpFilter, openstack, root, openstack, ip, availability, list, --project, .*
+      openstack_ip_availability_list_03: RegExpFilter, openstack, root, openstack, ip, availability, list, --ip-version, (?i)4|6
+      openstack_ip_availability_list_04: RegExpFilter, openstack, root, openstack, ip, availability, list, --ip-version, (?i)4|6, --project, .*
+      # openstack ip availability show regex filter
+      openstack_ip_availability_show_01: RegExpFilter, openstack, root, openstack, ip, availability, show, .*
+      # openstack ip floating list regex filter
+      openstack_ip_floating_list_01: RegExpFilter, openstack, root, openstack, ip, floating, list
+      # openstack ip floating show regex filter
+      openstack_ip_floating_show_01: RegExpFilter, openstack, root, openstack, ip, floating, show, .*
+      openstack_ip_floating_pool_list_01: RegExpFilter, openstack, root, openstack, ip, floating, pool, list
+      # openstack image regex filter
+      openstack_image_list_01: RegExpFilter, openstack, root, openstack, image, list 
+      openstack_image_list_02: RegExpFilter, openstack, root, openstack, image, list, --public|--private|--shared
+      openstack_image_list_03: RegExpFilter, openstack, root, openstack, image, list, --long
+      openstack_image_list_04: RegExpFilter, openstack, root, openstack, image, list, --limit|--marker|--name|--status|--sort|--property, .*
+      openstack_image_list_05: RegExpFilter, openstack, root, openstack, image, list, --limit, .*, --marker, .*, --name, .*, --status, .*, --sort, .*, --property, .*, --long, --public|--private|--shared
+      #openstack image show filter
+      openstack_image_show_01: RegExpFilter, openstack, root, openstack, image, show, .*
   openstackrootwrapconf:
     DEFAULT:
       # Configuration for openstack-rootwrap
@@ -78,7 +104,7 @@ conf:
       # explicitely specify a full path (separated by ',')
       # If not specified, defaults to system PATH environment variable.
       # These directories MUST all be only writeable by root !
-      exec_dirs: /sbin,/usr/sbin,/bin,/usr/bin,/usr/local/bin,/usr/local/sbin
+      exec_dirs: /sbin,/usr/sbin,/bin,/usr/bin,/usr/local/bin,/usr/local/sbin,/tmp
       # Enable logging to syslog
       # Default value is False
       use_syslog: True
