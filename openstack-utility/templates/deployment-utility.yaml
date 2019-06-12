@@ -89,6 +89,10 @@ spec:
               mountPath: /etc/openstack-utility/rootwrap.conf
               subPath: rootwrap.conf
               readOnly: true
+            - name: openstack-utility-bin
+              mountPath: /tmp/help
+              subPath: help
+              readOnly: true
       volumes:
         - name: openstack-utility-sudoers
           configMap:
