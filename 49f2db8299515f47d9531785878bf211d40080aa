@@ -46,6 +46,30 @@
       "revId": "49f2db8299515f47d9531785878bf211d40080aa",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "12c7b47a_27a9f2fc",
+        "filename": "openstack-utility/templates/bin/_nccli-sudo.tpl",
+        "patchSetId": 52
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1016091
+      },
+      "writtenOn": "2019-06-13T19:16:05Z",
+      "side": 1,
+      "message": "In _nccli.tpl you have like this:\n\"sudo -E /usr/local/bin/openstack-utility-rootwrap /etc/openstack-utility/rootwrap.conf $*\"\n\nso here you also have to have the same way\n\n/usr/local/bin/openstack-utility-rootwrap /etc/openstack-utility/rootwrap.conf *",
+      "parentUuid": "4aedd6ee_56918bbd",
+      "range": {
+        "startLine": 16,
+        "startChar": 44,
+        "endLine": 16,
+        "endChar": 85
+      },
+      "revId": "49f2db8299515f47d9531785878bf211d40080aa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
