@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a8cf2942_0757c40e",
+        "filename": "compute-utility/templates/bin/utility/_compute-utility-rootwrap.tpl",
+        "patchSetId": 1
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-13T14:48:16Z",
+      "side": 1,
+      "message": "Please remove extra space after \"+\"",
+      "revId": "833afdbdf87ef1c87c5f48d6f4f6cc03dafdd630",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "59e8ed9c_6d9d895a",
+        "filename": "compute-utility/templates/bin/utility/_compute.tpl",
+        "patchSetId": 1
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-13T14:48:16Z",
+      "side": 1,
+      "message": "Please remove extra space",
+      "revId": "833afdbdf87ef1c87c5f48d6f4f6cc03dafdd630",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "819e3dc2_8ac40600",
+        "filename": "compute-utility/values.yaml",
+        "patchSetId": 1
+      },
+      "lineNbr": 105,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-13T14:48:16Z",
+      "side": 1,
+      "message": "Please remove extra space",
+      "revId": "833afdbdf87ef1c87c5f48d6f4f6cc03dafdd630",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
