@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "8dd9b602_d9d69aaf",
+        "filename": "install_postgresql_utility.sh",
+        "patchSetId": 7
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-13T18:15:16Z",
+      "side": 1,
+      "message": "Missing Command after kubectl",
+      "revId": "bdbc91da441e44b3cf4781edaea451b9f30e3f7d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
