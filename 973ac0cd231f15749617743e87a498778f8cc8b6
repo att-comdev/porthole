@@ -1,0 +1,55 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "696d98f0_ee8a8105",
+        "filename": "compute-utility/templates/bin/utility/_compute-utility-rootwrap.tpl",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1014901
+      },
+      "writtenOn": "2019-06-13T19:13:53Z",
+      "side": 1,
+      "message": "How will you override this for every site ?Consider a scenario if its a production site and people can still login from genesis host to utility container. Because AUSER in not env, we need to restrict these scenarios",
+      "revId": "973ac0cd231f15749617743e87a498778f8cc8b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "75f5bd76_8987d3fd",
+        "filename": "compute-utility/templates/bin/utility/_compute-utility-rootwrap.tpl",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1014901
+      },
+      "writtenOn": "2019-06-13T19:13:53Z",
+      "side": 1,
+      "message": "it\u0027s actually capturing username not id, so please use appropriate naming convention",
+      "revId": "973ac0cd231f15749617743e87a498778f8cc8b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "b1816ff0_d0f52a37",
+        "filename": "compute-utility/templates/bin/utility/_compute-utility-rootwrap.tpl",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1014901
+      },
+      "writtenOn": "2019-06-13T19:13:53Z",
+      "side": 1,
+      "message": "This will lead to duplication of logs, please check if this is acceptable",
+      "revId": "973ac0cd231f15749617743e87a498778f8cc8b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
