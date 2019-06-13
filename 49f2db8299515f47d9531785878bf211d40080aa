@@ -22,6 +22,30 @@
       "revId": "49f2db8299515f47d9531785878bf211d40080aa",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4aedd6ee_56918bbd",
+        "filename": "openstack-utility/templates/bin/_nccli-sudo.tpl",
+        "patchSetId": 52
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-13T18:07:35Z",
+      "side": 1,
+      "message": "rootwrap.conf is already defined in this command defination under \nvalues.yaml:   filters_path: /etc/openstack-utility/rootwrap.d",
+      "parentUuid": "49390872_9917fd5e",
+      "range": {
+        "startLine": 16,
+        "startChar": 44,
+        "endLine": 16,
+        "endChar": 85
+      },
+      "revId": "49f2db8299515f47d9531785878bf211d40080aa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
