@@ -70,6 +70,30 @@
       "revId": "49f2db8299515f47d9531785878bf211d40080aa",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "fdb723e5_38e3c76a",
+        "filename": "openstack-utility/templates/bin/_nccli-sudo.tpl",
+        "patchSetId": 52
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-14T14:33:46Z",
+      "side": 1,
+      "message": "yes the reason we define so that we can get nccli opentack \u003ccommnds\u003e. This has /usr/local/bin/openstack-utility-rootwrap (oslo rootwrap conf) and this has  /etc/openstack-utility/rootwrap.conf (execution scripts and also syslog levels defined). This we need definitely needed for running nccli openstack commands",
+      "parentUuid": "12c7b47a_27a9f2fc",
+      "range": {
+        "startLine": 16,
+        "startChar": 44,
+        "endLine": 16,
+        "endChar": 85
+      },
+      "revId": "49f2db8299515f47d9531785878bf211d40080aa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
