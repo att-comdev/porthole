@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "21bb0281_812c6824",
+        "filename": "Openstack_Utility_Readme",
+        "patchSetId": 56
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1016303
+      },
+      "writtenOn": "2019-06-17T20:09:18Z",
+      "side": 1,
+      "message": "it will be good to have a link to the deployment guide",
+      "revId": "67ee348aa9e79f35a9ad59b999a6796951e11a4b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
