@@ -42,6 +42,30 @@
     },
     {
       "key": {
+        "uuid": "5563d6d1_d531759b",
+        "filename": "openstack-utility/templates/bin/_nccli-sudo.tpl",
+        "patchSetId": 56
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-17T21:03:20Z",
+      "side": 1,
+      "message": "can you please eloborate on what you mean not secure,Since we are restricting only to nobody user",
+      "parentUuid": "17b43d42_e9c64ff2",
+      "range": {
+        "startLine": 16,
+        "startChar": 44,
+        "endLine": 16,
+        "endChar": 85
+      },
+      "revId": "67ee348aa9e79f35a9ad59b999a6796951e11a4b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "3bf503e5_44c18827",
         "filename": "openstack-utility/templates/deployment-utility.yaml",
         "patchSetId": 56
@@ -53,6 +77,30 @@
       "writtenOn": "2019-06-17T20:18:19Z",
       "side": 1,
       "message": "only nccli needs to be executed bi everyone, all rootwrap only by root",
+      "range": {
+        "startLine": 100,
+        "startChar": 25,
+        "endLine": 100,
+        "endChar": 29
+      },
+      "revId": "67ee348aa9e79f35a9ad59b999a6796951e11a4b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "bfb36477_684cb409",
+        "filename": "openstack-utility/templates/deployment-utility.yaml",
+        "patchSetId": 56
+      },
+      "lineNbr": 100,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-17T21:03:20Z",
+      "side": 1,
+      "message": "There is no root login, Everyone would be logged with user  \"nobody\"",
+      "parentUuid": "3bf503e5_44c18827",
       "range": {
         "startLine": 100,
         "startChar": 25,
