@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "6a482536_f66e4276",
+        "filename": "compute-utility/templates/bin/utility/_compute-utility-rootwrap.tpl",
+        "patchSetId": 2
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1016497
+      },
+      "writtenOn": "2019-06-17T11:05:43Z",
+      "side": 1,
+      "message": "Thats a good scenario to be considered.dev_env can be set in the corridor schema property.which will have a default value of true for C1 corridor.For C2 , C3 and Production sites the default value will be false.So in that scenario 1. AUSER will not be set 2.dev_env is false(i.e default is false through corridor profile approach). So it will complain when logged in through genesis node in production sites as \u0027User environment not configured properly\u0027. makes sense?",
+      "parentUuid": "696d98f0_ee8a8105",
+      "revId": "973ac0cd231f15749617743e87a498778f8cc8b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "75f5bd76_8987d3fd",
         "filename": "compute-utility/templates/bin/utility/_compute-utility-rootwrap.tpl",
         "patchSetId": 2
