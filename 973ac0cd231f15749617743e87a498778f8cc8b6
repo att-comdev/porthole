@@ -36,6 +36,24 @@
     },
     {
       "key": {
+        "uuid": "04681de3_1050e422",
+        "filename": "compute-utility/templates/bin/utility/_compute-utility-rootwrap.tpl",
+        "patchSetId": 2
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1016497
+      },
+      "writtenOn": "2019-06-17T10:58:40Z",
+      "side": 1,
+      "message": "This is just a temp variable to hold the AUSER value which is expected to be set as ENV .While Logging it will show which a prefix identifier ActualUser.",
+      "parentUuid": "75f5bd76_8987d3fd",
+      "revId": "973ac0cd231f15749617743e87a498778f8cc8b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "b1816ff0_d0f52a37",
         "filename": "compute-utility/templates/bin/utility/_compute-utility-rootwrap.tpl",
         "patchSetId": 2
