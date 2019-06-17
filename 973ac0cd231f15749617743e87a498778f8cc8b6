@@ -50,6 +50,24 @@
       "revId": "973ac0cd231f15749617743e87a498778f8cc8b6",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "338cfb6d_8861ef2c",
+        "filename": "compute-utility/templates/bin/utility/_compute-utility-rootwrap.tpl",
+        "patchSetId": 2
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1016497
+      },
+      "writtenOn": "2019-06-17T10:49:39Z",
+      "side": 1,
+      "message": "Storing duplicate logs can be considered as O(n) problem.We are not changing the upstream oslo-rootwrap library code .I believe filters can be applied in elasticsearch(i.e with \nActualUser) to get what logs we want to visualize.",
+      "parentUuid": "b1816ff0_d0f52a37",
+      "revId": "973ac0cd231f15749617743e87a498778f8cc8b6",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
