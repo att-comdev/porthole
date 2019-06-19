@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "48912f3a_6039de91",
+        "filename": "Dockerfiles/Dockerfile",
+        "patchSetId": 57
+      },
+      "lineNbr": 11,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-06-19T19:31:12Z",
+      "side": 1,
+      "message": "remind me again why we do this?",
+      "range": {
+        "startLine": 10,
+        "startChar": 2,
+        "endLine": 11,
+        "endChar": 80
+      },
+      "revId": "0416b1ae56cd9cd6185ac2ecbc17087910624483",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "700474b8_fe82b59a",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile",
+        "patchSetId": 57
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-06-19T19:31:12Z",
+      "side": 1,
+      "message": "also",
+      "range": {
+        "startLine": 7,
+        "startChar": 1,
+        "endLine": 8,
+        "endChar": 78
+      },
+      "revId": "0416b1ae56cd9cd6185ac2ecbc17087910624483",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
