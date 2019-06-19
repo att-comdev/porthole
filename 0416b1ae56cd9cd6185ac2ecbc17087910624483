@@ -45,6 +45,30 @@
       "revId": "0416b1ae56cd9cd6185ac2ecbc17087910624483",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "8dd71a98_1c75774c",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile",
+        "patchSetId": 57
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-19T21:05:55Z",
+      "side": 1,
+      "message": "Chris, It to add new user nobody, userid,groupid and group name  to /etc/passwd",
+      "parentUuid": "700474b8_fe82b59a",
+      "range": {
+        "startLine": 7,
+        "startChar": 1,
+        "endLine": 8,
+        "endChar": 78
+      },
+      "revId": "0416b1ae56cd9cd6185ac2ecbc17087910624483",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
