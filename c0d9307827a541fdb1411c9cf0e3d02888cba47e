@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "4a7ed162_50d1dbe6",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 11
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-06-19T19:33:16Z",
+      "side": 1,
+      "message": "tws",
+      "revId": "c0d9307827a541fdb1411c9cf0e3d02888cba47e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "68446e3b_86f50161",
+        "filename": "openstack-utility/templates/bin/utility/_openstack-utility-rootwrap.tpl",
+        "patchSetId": 11
+      },
+      "lineNbr": 44,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-06-19T19:33:16Z",
+      "side": 1,
+      "message": "tws",
+      "range": {
+        "startLine": 44,
+        "startChar": 82,
+        "endLine": 44,
+        "endChar": 83
+      },
+      "revId": "c0d9307827a541fdb1411c9cf0e3d02888cba47e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5dcc2677_35fe9ce3",
+        "filename": "openstack-utility/values.yaml",
+        "patchSetId": 11
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1012098
+      },
+      "writtenOn": "2019-06-19T19:33:16Z",
+      "side": 1,
+      "message": "also",
+      "range": {
+        "startLine": 97,
+        "startChar": 32,
+        "endLine": 97,
+        "endChar": 33
+      },
+      "revId": "c0d9307827a541fdb1411c9cf0e3d02888cba47e",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
