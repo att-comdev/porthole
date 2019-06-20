@@ -16,6 +16,24 @@
       "revId": "cf5bfce0876ee954f5f2586634c979288e13c082",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "2d147683_a3adf1a2",
+        "filename": "postgresql_utility_ReadMe",
+        "patchSetId": 10
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 1016512
+      },
+      "writtenOn": "2019-06-20T08:24:33Z",
+      "side": 1,
+      "message": "Removed",
+      "parentUuid": "0f499bb2_83b2276f",
+      "revId": "cf5bfce0876ee954f5f2586634c979288e13c082",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     }
   ]
 }
