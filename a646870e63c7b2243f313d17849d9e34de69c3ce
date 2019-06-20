@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "b43d6bb6_5086cca1",
+        "filename": "install_etcdctl_utility.sh",
+        "patchSetId": 17
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-20T01:39:06Z",
+      "side": 1,
+      "message": "why do we need this?",
+      "revId": "a646870e63c7b2243f313d17849d9e34de69c3ce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
