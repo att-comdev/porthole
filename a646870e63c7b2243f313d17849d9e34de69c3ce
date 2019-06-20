@@ -16,6 +16,24 @@
       "revId": "a646870e63c7b2243f313d17849d9e34de69c3ce",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e7ac9b1e_cd8b5403",
+        "filename": "install_etcdctl_utility.sh",
+        "patchSetId": 17
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1014995
+      },
+      "writtenOn": "2019-06-20T10:49:23Z",
+      "side": 1,
+      "message": "This is to validate the job related to utility namespace.",
+      "parentUuid": "b43d6bb6_5086cca1",
+      "revId": "a646870e63c7b2243f313d17849d9e34de69c3ce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
