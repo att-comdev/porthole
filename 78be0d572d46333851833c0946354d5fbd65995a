@@ -25,6 +25,30 @@
     },
     {
       "key": {
+        "uuid": "2f91fd3f_76a92ac7",
+        "filename": "openstack-utility/templates/bin/utility/_openstack-utility-rootwrap.tpl",
+        "patchSetId": 14
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2019-06-24T16:21:15Z",
+      "side": 1,
+      "message": "Done",
+      "parentUuid": "2b8e7f53_01b14580",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 5
+      },
+      "revId": "78be0d572d46333851833c0946354d5fbd65995a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "8c4de8f4_3a0be865",
         "filename": "openstack-utility/templates/bin/utility/_openstack-utility-rootwrap.tpl",
         "patchSetId": 14
@@ -60,6 +84,30 @@
       "side": 1,
       "message": "If operators try to execute commands from genesis node, sites other than development sites , where AUSER is not set , we are suppose to restrict them from executing.That was the assumption behind the else.",
       "parentUuid": "8c4de8f4_3a0be865",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 10
+      },
+      "revId": "78be0d572d46333851833c0946354d5fbd65995a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "f73d9176_5b534d1e",
+        "filename": "openstack-utility/templates/bin/utility/_openstack-utility-rootwrap.tpl",
+        "patchSetId": 14
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2019-06-24T16:21:15Z",
+      "side": 1,
+      "message": "oh yes, I see.\nIn that case just update the error message to something that says that instead of referring to non-public wiki. EX:\n\"No username set in AUSER environment variable, refusing to start container.\"",
+      "parentUuid": "e3dda14b_e680691b",
       "range": {
         "startLine": 33,
         "startChar": 0,
