@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "2b8e7f53_01b14580",
+        "filename": "openstack-utility/templates/bin/utility/_openstack-utility-rootwrap.tpl",
+        "patchSetId": 14
+      },
+      "lineNbr": 31,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2019-06-24T16:09:05Z",
+      "side": 1,
+      "message": "elif --\u003e else",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 31,
+        "endChar": 5
+      },
+      "revId": "78be0d572d46333851833c0946354d5fbd65995a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "8c4de8f4_3a0be865",
+        "filename": "openstack-utility/templates/bin/utility/_openstack-utility-rootwrap.tpl",
+        "patchSetId": 14
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2019-06-24T16:09:05Z",
+      "side": 1,
+      "message": "I don\u0027t see how this \"else\" statement would ever be executed anyway, so why not remove it?",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 10
+      },
+      "revId": "78be0d572d46333851833c0946354d5fbd65995a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
