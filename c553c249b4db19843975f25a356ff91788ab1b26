@@ -22,6 +22,30 @@
       "revId": "c553c249b4db19843975f25a356ff91788ab1b26",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "66b2cdfe_9c87df29",
+        "filename": "openstack-utility/values.yaml",
+        "patchSetId": 15
+      },
+      "lineNbr": 99,
+      "author": {
+        "id": 1016497
+      },
+      "writtenOn": "2019-06-24T18:32:44Z",
+      "side": 1,
+      "message": "This Chart is actually not implemented by me.I have introduced this key, so I thought of following the best practices helm docs suggesting for naming a key.",
+      "parentUuid": "cf43ac5b_2a9b7f55",
+      "range": {
+        "startLine": 99,
+        "startChar": 4,
+        "endLine": 99,
+        "endChar": 21
+      },
+      "revId": "c553c249b4db19843975f25a356ff91788ab1b26",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
