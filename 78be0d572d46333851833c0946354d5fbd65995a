@@ -45,6 +45,30 @@
       "revId": "78be0d572d46333851833c0946354d5fbd65995a",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e3dda14b_e680691b",
+        "filename": "openstack-utility/templates/bin/utility/_openstack-utility-rootwrap.tpl",
+        "patchSetId": 14
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1016497
+      },
+      "writtenOn": "2019-06-24T16:15:04Z",
+      "side": 1,
+      "message": "If operators try to execute commands from genesis node, sites other than development sites , where AUSER is not set , we are suppose to restrict them from executing.That was the assumption behind the else.",
+      "parentUuid": "8c4de8f4_3a0be865",
+      "range": {
+        "startLine": 33,
+        "startChar": 0,
+        "endLine": 36,
+        "endChar": 10
+      },
+      "revId": "78be0d572d46333851833c0946354d5fbd65995a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
     }
   ]
 }
