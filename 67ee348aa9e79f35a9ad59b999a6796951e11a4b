@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "4ee0039b_ae9db755",
+        "filename": "Openstack_Utility_Readme",
+        "patchSetId": 56
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-25T15:54:37Z",
+      "side": 1,
+      "message": "The below is the guide to deployment.",
+      "parentUuid": "21bb0281_812c6824",
+      "revId": "67ee348aa9e79f35a9ad59b999a6796951e11a4b",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "17b43d42_e9c64ff2",
         "filename": "openstack-utility/templates/bin/_nccli-sudo.tpl",
         "patchSetId": 56
