@@ -1,0 +1,182 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "73ba009b_2bedeb62",
+        "filename": "Dockerfiles/etcdctl-utility/Dockerfile",
+        "patchSetId": 20
+      },
+      "lineNbr": 28,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-06-25T19:11:38Z",
+      "side": 1,
+      "message": "do we need kubectl inside etcd utility?",
+      "range": {
+        "startLine": 26,
+        "startChar": 0,
+        "endLine": 28,
+        "endChar": 34
+      },
+      "revId": "0df69b610a6e66cb66f49cd690f0bc8ca5a79442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "3241c04e_e05a0472",
+        "filename": "Dockerfiles/etcdctl-utility/Makefile",
+        "patchSetId": 20
+      },
+      "lineNbr": 42,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-06-25T19:11:38Z",
+      "side": 1,
+      "message": "check the dockerfile name",
+      "range": {
+        "startLine": 42,
+        "startChar": 46,
+        "endLine": 42,
+        "endChar": 64
+      },
+      "revId": "0df69b610a6e66cb66f49cd690f0bc8ca5a79442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "31f66506_b22a2275",
+        "filename": "Dockerfiles/etcdctl-utility/Makefile",
+        "patchSetId": 20
+      },
+      "lineNbr": 48,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-06-25T19:11:38Z",
+      "side": 1,
+      "message": "do we need this?",
+      "range": {
+        "startLine": 48,
+        "startChar": 7,
+        "endLine": 48,
+        "endChar": 30
+      },
+      "revId": "0df69b610a6e66cb66f49cd690f0bc8ca5a79442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "cff08647_1377a453",
+        "filename": "Dockerfiles/etcdctl-utility/Makefile",
+        "patchSetId": 20
+      },
+      "lineNbr": 58,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-06-25T19:11:38Z",
+      "side": 1,
+      "message": "check the dockerfile name",
+      "range": {
+        "startLine": 58,
+        "startChar": 47,
+        "endLine": 58,
+        "endChar": 65
+      },
+      "revId": "0df69b610a6e66cb66f49cd690f0bc8ca5a79442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4f0f1f41_b00b9565",
+        "filename": "Dockerfiles/etcdctl-utility/build.sh",
+        "patchSetId": 20
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-06-25T19:11:38Z",
+      "side": 1,
+      "message": "i dont see dockerfile name in this pattern",
+      "range": {
+        "startLine": 12,
+        "startChar": 25,
+        "endLine": 12,
+        "endChar": 45
+      },
+      "revId": "0df69b610a6e66cb66f49cd690f0bc8ca5a79442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "628d5aaf_e85f87bc",
+        "filename": "etcdctl-utility/templates/bin/_managekey.sh.tpl",
+        "patchSetId": 20
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-06-25T19:11:38Z",
+      "side": 1,
+      "message": "remove this file if its not needed",
+      "revId": "0df69b610a6e66cb66f49cd690f0bc8ca5a79442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "983384de_eda6c94c",
+        "filename": "etcdctl-utility/templates/deployment-utility.yaml",
+        "patchSetId": 20
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-06-25T19:11:38Z",
+      "side": 1,
+      "message": "remove this whitespace",
+      "range": {
+        "startLine": 83,
+        "startChar": 63,
+        "endLine": 83,
+        "endChar": 65
+      },
+      "revId": "0df69b610a6e66cb66f49cd690f0bc8ca5a79442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "be342c58_d69d5ff2",
+        "filename": "etcdctl-utility/values.yaml",
+        "patchSetId": 20
+      },
+      "lineNbr": 162,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-06-25T19:11:38Z",
+      "side": 1,
+      "message": "i think this have to be in default or default have to be set to null",
+      "range": {
+        "startLine": 162,
+        "startChar": 11,
+        "endLine": 162,
+        "endChar": 20
+      },
+      "revId": "0df69b610a6e66cb66f49cd690f0bc8ca5a79442",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
