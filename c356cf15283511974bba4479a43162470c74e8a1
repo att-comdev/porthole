@@ -1,0 +1,73 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "bf6eca32_782c87d2",
+        "filename": "openstack-utility/templates/bin/utility/_openstack-utility-rootwrap.tpl",
+        "patchSetId": 17
+      },
+      "lineNbr": 32,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-06-25T19:24:48Z",
+      "side": 1,
+      "message": "do we need to prompt for userid?",
+      "range": {
+        "startLine": 31,
+        "startChar": 0,
+        "endLine": 32,
+        "endChar": 31
+      },
+      "revId": "c356cf15283511974bba4479a43162470c74e8a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "2ec5620c_e8b85461",
+        "filename": "openstack-utility/templates/bin/utility/_openstack-utility-rootwrap.tpl",
+        "patchSetId": 17
+      },
+      "lineNbr": 34,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-06-25T19:24:48Z",
+      "side": 1,
+      "message": "i think that the pod will be running already. can you put a better comment?",
+      "range": {
+        "startLine": 34,
+        "startChar": 58,
+        "endLine": 34,
+        "endChar": 85
+      },
+      "revId": "c356cf15283511974bba4479a43162470c74e8a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "54619610_0c9c807e",
+        "filename": "openstack-utility/templates/bin/utility/_openstack-utility-rootwrap.tpl",
+        "patchSetId": 17
+      },
+      "lineNbr": 40,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-06-25T19:24:48Z",
+      "side": 1,
+      "message": "i think that the pod will be running already. can you put a better comment?",
+      "range": {
+        "startLine": 40,
+        "startChar": 11,
+        "endLine": 40,
+        "endChar": 75
+      },
+      "revId": "c356cf15283511974bba4479a43162470c74e8a1",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
