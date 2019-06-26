@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fbaeaf1_e00d8bfc",
+        "filename": "etcdctl-utility/templates/deployment-utility.yaml",
+        "patchSetId": 24
+      },
+      "lineNbr": 52,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-26T15:47:37Z",
+      "side": 1,
+      "message": "Values function is not defined, Please try helm lint for troubleshooting",
+      "revId": "17e6ef909dfe7346fe0d4a52b60c95760ecabcce",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
