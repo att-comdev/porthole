@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a873b70_6afa4825",
+        "filename": "Dockerfiles/etcdctl-utility/README",
+        "patchSetId": 26
+      },
+      "lineNbr": 24,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-26T19:00:58Z",
+      "side": 1,
+      "message": "why is openstack-helm needed here?Are we cloning both osh and AIB on same VM?",
+      "revId": "d92c1089bc19f48e26d11ceda8e928955c7f0db7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4e6ae9bf_7aada7ee",
+        "filename": "etcdctl-utility/templates/bin/_bootstrap.sh.tpl",
+        "patchSetId": 26
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-26T19:00:58Z",
+      "side": 1,
+      "message": "please remove \".\" we don\u0027t need it",
+      "range": {
+        "startLine": 18,
+        "startChar": 6,
+        "endLine": 18,
+        "endChar": 7
+      },
+      "revId": "d92c1089bc19f48e26d11ceda8e928955c7f0db7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
