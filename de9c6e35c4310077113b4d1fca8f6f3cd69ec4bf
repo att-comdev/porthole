@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9d7dd125_402ad60b",
+        "filename": "Dockerfiles/etcdctl-utility/README",
+        "patchSetId": 29
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-27T22:53:23Z",
+      "side": 1,
+      "message": "Please change to reflect the newest PS number please",
+      "revId": "de9c6e35c4310077113b4d1fca8f6f3cd69ec4bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "4d938dc4_18d077bc",
+        "filename": "install_etcdctl_utility.sh",
+        "patchSetId": 29
+      },
+      "lineNbr": 4,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-27T22:53:23Z",
+      "side": 1,
+      "message": "In the README file, you\u0027re using AIB for deployment. Then why are we using openstach-helm-infra here. Can you Please make it consistent",
+      "revId": "de9c6e35c4310077113b4d1fca8f6f3cd69ec4bf",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
