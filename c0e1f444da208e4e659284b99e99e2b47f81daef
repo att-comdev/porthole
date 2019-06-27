@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "cc7330b3_911f23bb",
+        "filename": "compute-utility/templates/bin/_bootstrap.sh.tpl",
+        "patchSetId": 8
+      },
+      "lineNbr": 18,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-27T12:49:08Z",
+      "side": 1,
+      "message": "you can remove the \".\". We don\u0027t need it",
+      "revId": "c0e1f444da208e4e659284b99e99e2b47f81daef",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "ad117df7_f8921269",
+        "filename": "install_compute_utility.sh",
+        "patchSetId": 8
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-06-27T12:49:08Z",
+      "side": 1,
+      "message": "--show-all is depreciated, Please remove it.",
+      "revId": "c0e1f444da208e4e659284b99e99e2b47f81daef",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
