@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "f176ac73_dca52f8b",
+        "filename": "/COMMIT_MSG",
+        "patchSetId": 12
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1016303
+      },
+      "writtenOn": "2019-06-28T12:29:59Z",
+      "side": 1,
+      "message": "can you comment what\u0027s wrong with message?  is there a format/structure i must follow? thanks",
+      "revId": "179432a265a2ab181fb8ed83c5996a6bfe1de9aa",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    }
+  ]
+}
