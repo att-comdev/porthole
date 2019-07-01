@@ -1,0 +1,50 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "07ad03e7_44a2fe85",
+        "filename": "Dockerfiles/etcdctl-utility/README",
+        "patchSetId": 30
+      },
+      "lineNbr": 20,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-07-01T16:06:04Z",
+      "side": 1,
+      "message": "This have to be removed. Since this documentation will be available only after this ps merged in to porthole repo",
+      "range": {
+        "startLine": 19,
+        "startChar": 0,
+        "endLine": 20,
+        "endChar": 58
+      },
+      "revId": "4b40680a15d83a1c055b105c9563d71b847d9b25",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "e72d74ad_2e95e70d",
+        "filename": "etcdctl-utility/Chart.yaml",
+        "patchSetId": 30
+      },
+      "lineNbr": 30,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-07-01T16:06:04Z",
+      "side": 1,
+      "message": "why do we need openstack-helm reference here?",
+      "range": {
+        "startLine": 30,
+        "startChar": 2,
+        "endLine": 30,
+        "endChar": 59
+      },
+      "revId": "4b40680a15d83a1c055b105c9563d71b847d9b25",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
