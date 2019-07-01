@@ -1,0 +1,96 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "425a1378_6788ee82",
+        "filename": "Compute_Utility_Readme",
+        "patchSetId": 9
+      },
+      "lineNbr": 97,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-07-01T16:21:33Z",
+      "side": 1,
+      "message": "Please remove the PS reference as this will become invalid once this ps is merged",
+      "range": {
+        "startLine": 97,
+        "startChar": 0,
+        "endLine": 97,
+        "endChar": 106
+      },
+      "revId": "3ad941bb3065833a94ee8243ea4dc5e54ac88aac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9fdd4eae_ecbff1d9",
+        "filename": "Dockerfiles/compute-utility/Dockerfile.ubuntu_xenial",
+        "patchSetId": 9
+      },
+      "lineNbr": 19,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-07-01T16:21:33Z",
+      "side": 1,
+      "message": "do we need kubectl and pip in this container?",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 19,
+        "endChar": 24
+      },
+      "revId": "3ad941bb3065833a94ee8243ea4dc5e54ac88aac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "303839a6_e32e1f92",
+        "filename": "Dockerfiles/compute-utility/Makefile",
+        "patchSetId": 9
+      },
+      "lineNbr": 33,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-07-01T16:21:33Z",
+      "side": 1,
+      "message": "this docker build will fail because docker file is named \"Dockerfile.${DISTRO}\"",
+      "range": {
+        "startLine": 33,
+        "startChar": 17,
+        "endLine": 33,
+        "endChar": 27
+      },
+      "revId": "3ad941bb3065833a94ee8243ea4dc5e54ac88aac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "a36bc156_93abdcb1",
+        "filename": "compute-utility/templates/bin/utility/_compute-utility-rootwrap.tpl",
+        "patchSetId": 9
+      },
+      "lineNbr": 41,
+      "author": {
+        "id": 1015098
+      },
+      "writtenOn": "2019-07-01T16:21:33Z",
+      "side": 1,
+      "message": "Please provide an appropriate error message, i believe that the pod will always be running and only access to it is restricted",
+      "range": {
+        "startLine": 41,
+        "startChar": 11,
+        "endLine": 41,
+        "endChar": 75
+      },
+      "revId": "3ad941bb3065833a94ee8243ea4dc5e54ac88aac",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
