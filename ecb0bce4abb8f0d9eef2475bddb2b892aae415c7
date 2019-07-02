@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "302a5943_40537076",
+        "filename": "ceph-utility/templates/bin/utility/_ceph-utility-rootwrap.tpl",
+        "patchSetId": 16
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1014901
+      },
+      "writtenOn": "2019-07-02T19:35:37Z",
+      "side": 1,
+      "message": "yes, I was explicitly asked to use this msg. let me share. we need to see if we can override this msg in downstream",
+      "parentUuid": "58922d54_0ffbf296",
+      "revId": "ecb0bce4abb8f0d9eef2475bddb2b892aae415c7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "5a33501e_55157105",
         "filename": "ceph-utility/values.yaml",
         "patchSetId": 16
@@ -30,6 +48,24 @@
       "writtenOn": "2019-07-02T14:50:07Z",
       "side": 1,
       "message": "location_corridor is very much AT\u0026T specific terminology.Upstream I think that can be avoided.",
+      "revId": "ecb0bce4abb8f0d9eef2475bddb2b892aae415c7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "0005e960_af2ebd91",
+        "filename": "ceph-utility/values.yaml",
+        "patchSetId": 16
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1014901
+      },
+      "writtenOn": "2019-07-02T19:35:37Z",
+      "side": 1,
+      "message": "I tried different ways to avoid exposure of corridor variable, but was not successful. I have mentioned this to design team. Same was demoed to architects. But if you say it can be avoided and can you please let me know how it can be avoided, covering all the basic scenarios.",
+      "parentUuid": "5a33501e_55157105",
       "revId": "ecb0bce4abb8f0d9eef2475bddb2b892aae415c7",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
