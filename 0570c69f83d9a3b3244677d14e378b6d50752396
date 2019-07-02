@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "a737708c_79ff08a4",
+        "filename": "Dockerfiles/etcdctl-utility/README",
+        "patchSetId": 31
+      },
+      "lineNbr": 17,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-07-02T16:04:04Z",
+      "side": 1,
+      "message": "Does porthole already has your PS merged?",
+      "revId": "0570c69f83d9a3b3244677d14e378b6d50752396",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "9f34ecaa_18f982c2",
+        "filename": "install_etcdctl_utility.sh",
+        "patchSetId": 31
+      },
+      "lineNbr": 9,
+      "author": {
+        "id": 1016443
+      },
+      "writtenOn": "2019-07-02T16:04:04Z",
+      "side": 1,
+      "message": "--show-all id depreciated, btw you don\u0027t need jobs also as you will not be creating any jobs as a part of your deployment",
+      "revId": "0570c69f83d9a3b3244677d14e378b6d50752396",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
