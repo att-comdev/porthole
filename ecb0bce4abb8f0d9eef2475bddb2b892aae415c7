@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "58922d54_0ffbf296",
+        "filename": "ceph-utility/templates/bin/utility/_ceph-utility-rootwrap.tpl",
+        "patchSetId": 16
+      },
+      "lineNbr": 36,
+      "author": {
+        "id": 1016497
+      },
+      "writtenOn": "2019-07-02T14:50:07Z",
+      "side": 1,
+      "message": "Upstream User has no idea of the wiki you have referring to.",
+      "revId": "ecb0bce4abb8f0d9eef2475bddb2b892aae415c7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "5a33501e_55157105",
+        "filename": "ceph-utility/values.yaml",
+        "patchSetId": 16
+      },
+      "lineNbr": 83,
+      "author": {
+        "id": 1016497
+      },
+      "writtenOn": "2019-07-02T14:50:07Z",
+      "side": 1,
+      "message": "location_corridor is very much AT\u0026T specific terminology.Upstream I think that can be avoided.",
+      "revId": "ecb0bce4abb8f0d9eef2475bddb2b892aae415c7",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
