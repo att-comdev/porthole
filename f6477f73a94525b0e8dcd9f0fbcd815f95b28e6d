@@ -1,0 +1,90 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "47e83ea2_75e7e5d1",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile.ubuntu_xenial",
+        "patchSetId": 71
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2019-07-03T19:40:13Z",
+      "side": 1,
+      "message": "Are you using something as a template for creating this file? If copied from somewhere else, please include the source where copied from.",
+      "revId": "f6477f73a94525b0e8dcd9f0fbcd815f95b28e6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "71e68f14_f0e6f124",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile.ubuntu_xenial",
+        "patchSetId": 71
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2019-07-03T19:40:13Z",
+      "side": 1,
+      "message": "A lot of command here, the purpose for some which are not clear - please add some comments that explain what is being for different commands or sets of commands.",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 13
+      },
+      "revId": "f6477f73a94525b0e8dcd9f0fbcd815f95b28e6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "031d0c13_a7975aa0",
+        "filename": "Openstack_Utility_Readme",
+        "patchSetId": 71
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2019-07-03T19:40:13Z",
+      "side": 1,
+      "message": "This should all be part of a CI/CD pipeline that runs these commands and posts +/-1 Verified on the code reviews for this repo. I don\u0027t know why the team hasn\u0027t moved this repo to opendev yet as this would make it easier for you to leverage pre-existing CI infrastructure, but lacking that then you need to do so in Jenkins here (and then redo it for Zuul after moving to OpenDev).",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 27
+      },
+      "revId": "f6477f73a94525b0e8dcd9f0fbcd815f95b28e6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "7dfa373d_41e8c2a6",
+        "filename": "openstack-utility/values.yaml",
+        "patchSetId": 71
+      },
+      "lineNbr": 15,
+      "author": {
+        "id": 1012094
+      },
+      "writtenOn": "2019-07-03T19:40:13Z",
+      "side": 1,
+      "message": "Why is this referencing a tag under your name?",
+      "range": {
+        "startLine": 15,
+        "startChar": 34,
+        "endLine": 15,
+        "endChar": 50
+      },
+      "revId": "f6477f73a94525b0e8dcd9f0fbcd815f95b28e6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
