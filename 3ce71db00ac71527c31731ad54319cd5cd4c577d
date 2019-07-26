@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "30647cb4_cc6fa2b0",
+        "filename": "etcdctl-utility/templates/bin/_start.sh.tpl",
+        "patchSetId": 44
+      },
+      "lineNbr": 27,
+      "author": {
+        "id": 1016323
+      },
+      "writtenOn": "2019-07-26T17:11:22Z",
+      "side": 1,
+      "message": "you only need this if you have a readiness probe that uses it",
+      "range": {
+        "startLine": 27,
+        "startChar": 0,
+        "endLine": 27,
+        "endChar": 5
+      },
+      "revId": "3ce71db00ac71527c31731ad54319cd5cd4c577d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
