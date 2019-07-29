@@ -2,6 +2,23 @@
   "comments": [
     {
       "key": {
+        "uuid": "4db661bf_62a621da",
+        "filename": "Dockerfiles/etcdctl-utility/Dockerfile",
+        "patchSetId": 44
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 1012096
+      },
+      "writtenOn": "2019-07-29T17:30:33Z",
+      "side": 1,
+      "message": "Doesn\u0027t look like this is used, correct?  If it is used (and I\u0027m just missing it) then this should probably be defaulted to the version of k8s used by Promenade, which is currently 1.11.6: https://opendev.org/airship/promenade/src/branch/master/charts/scheduler/values.yaml#L68",
+      "revId": "3ce71db00ac71527c31731ad54319cd5cd4c577d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    },
+    {
+      "key": {
         "uuid": "30647cb4_cc6fa2b0",
         "filename": "etcdctl-utility/templates/bin/_start.sh.tpl",
         "patchSetId": 44
