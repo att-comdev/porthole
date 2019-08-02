@@ -19,6 +19,24 @@
     },
     {
       "key": {
+        "uuid": "2c740340_4c61745e",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile.ubuntu_xenial",
+        "patchSetId": 71
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 1015001
+      },
+      "writtenOn": "2019-08-02T20:33:41Z",
+      "side": 1,
+      "message": "It was copied from docker hub docker file (https://hub.docker.com/r/ioft/i386-ubuntu/dockerfile)",
+      "parentUuid": "47e83ea2_75e7e5d1",
+      "revId": "f6477f73a94525b0e8dcd9f0fbcd815f95b28e6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "71e68f14_f0e6f124",
         "filename": "Dockerfiles/openstack-utility/Dockerfile.ubuntu_xenial",
         "patchSetId": 71
@@ -42,6 +60,30 @@
     },
     {
       "key": {
+        "uuid": "e892f6ba_c8b4b02a",
+        "filename": "Dockerfiles/openstack-utility/Dockerfile.ubuntu_xenial",
+        "patchSetId": 71
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 1015001
+      },
+      "writtenOn": "2019-08-02T20:33:41Z",
+      "side": 1,
+      "message": "Added Comments in the Latest PS.",
+      "parentUuid": "71e68f14_f0e6f124",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 13
+      },
+      "revId": "f6477f73a94525b0e8dcd9f0fbcd815f95b28e6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "031d0c13_a7975aa0",
         "filename": "Openstack_Utility_Readme",
         "patchSetId": 71
@@ -62,6 +104,30 @@
       "revId": "f6477f73a94525b0e8dcd9f0fbcd815f95b28e6d",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
       "unresolved": true
+    },
+    {
+      "key": {
+        "uuid": "d8387035_9b5ebd5d",
+        "filename": "Openstack_Utility_Readme",
+        "patchSetId": 71
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 1015001
+      },
+      "writtenOn": "2019-08-02T20:33:41Z",
+      "side": 1,
+      "message": "Airship team has already started upgrading to opendev, both zuul and jenkins would be taken care there.",
+      "parentUuid": "031d0c13_a7975aa0",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 27
+      },
+      "revId": "f6477f73a94525b0e8dcd9f0fbcd815f95b28e6d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": false
     },
     {
       "key": {
