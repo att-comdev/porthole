@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "d8dacc92_294c312d",
+        "filename": "etcdctl-utility/templates/configmap-etc-sudoers.yaml",
+        "patchSetId": 46
+      },
+      "lineNbr": 25,
+      "author": {
+        "id": 1015001
+      },
+      "writtenOn": "2019-08-02T14:43:03Z",
+      "side": 1,
+      "message": "I don\u0027t see _utilscli-sudo under bin.",
+      "revId": "c1d230c2e769c8da8ddad13e8fd230e113dd7ebd",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735",
+      "unresolved": true
+    }
+  ]
+}
